@@ -2,7 +2,7 @@ import org.apache.poi.ss.usermodel.*
 import org.apache.poi.hssf.usermodel.*
 import org.apache.poi.xssf.usermodel.*
 import org.apache.poi.ss.util.*
-import org.poi.ss.usermodel.*
+import org.apache.poi.ss.usermodel.*
 import java.io.*
 
 class GroovyExcelParser {
@@ -77,20 +77,5 @@ class GroovyExcelParser {
         obj += "</object>"
     }
 
-    public static void main(String[]args) {
-        def filename = 'C://Users//lucasj8//Downloads//MasterProjectPortfolio.xslm'
-        GroovyExcelParser parser = new GroovyExcelParser()
-        def (headers, rows) = parser.parse(filename)
-        println 'Headers'
-        println '------------------'
-        headers.each { header ->
-            println header
-        }
-        println "\n"
-        println 'Rows'
-        println '------------------'
-        rows.each { row ->
-            println parser.toXml(headers, row)
-        }
-    }
+
 }
