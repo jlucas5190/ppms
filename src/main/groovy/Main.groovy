@@ -5,6 +5,7 @@
 import GroovyExcelParser
 import Connect
 import groovy.sql.Sql
+import tables.TblResource
 
 import java.sql.Connection
 import java.sql.PreparedStatement
@@ -27,9 +28,10 @@ class Main {
     static budgetYear = [ '2015', '2016', '2017', '2018','2019','2020','2021', '2022']
     //static budgetYear = [1, 2, 3, 4, 5, 6]
 
-    public static void main(String[] args) {
+    public static main(args) {
         Sql sql = Sql.newInstance(url, username, password, driver)
-
+        TblResource resource =  new TblResource("C:\\Users\\lucasj8\\Desktop\\ppms.xslx")
+        resource.readExcel()
         /*GroovyExcelParser parser = new GroovyExcelParser()
         def (headers, rows) = parser.parse(excel, 2)
         println 'Headers'
@@ -46,19 +48,19 @@ class Main {
 
         //Connect sql = new Connect(url,username,password,driver)
 
-       def resultExpense = populateBudgetArrayList(Sql.newInstance(url, username, password, driver))
-      def resultCapital = populateBudgetArrayList(Sql.newInstance(url, username, password, driver))
-        def resultResource = populateResourceArrayList(Sql.newInstance(url, username, password, driver))
+       //def resultExpense = populateBudgetArrayList(Sql.newInstance(url, username, password, driver))
+     // def resultCapital = populateBudgetArrayList(Sql.newInstance(url, username, password, driver))
+       // def resultResource = populateResourceArrayList(Sql.newInstance(url, username, password, driver))
 
        // def result =[]
       //  result.add([ProjectNo:244, BudgetCycle:3, BudgetYear:7, BudgetCycleYear:8, Jan:77381, Feb:42289, Mar:15994, Apr:19871, May:40422, Jun:30781, Jul:74519, Aug:57338, Sep:8463, Oct:73446, Nov:18704, Dec:98725])
 
 
     //   deleteAllFromTable(Sql.newInstance(url, username, password, driver), "tblBUDGET")
-        insertIntoResourceTable(Sql.newInstance(url, username, password, driver),"tblResource",resultResource)
-       insertIntoCashflowTable(Sql.newInstance(url, username, password, driver),"tblCapitalCashflow",resultCapital)
-       insertIntoCashflowTable(Sql.newInstance(url, username, password, driver),"tblExpenseCashflow" ,resultExpense)
-       insertIntoBudgetTable(Sql.newInstance(url, username, password, driver),"tblBudget" ,resultCapital)
+     //   insertIntoResourceTable(Sql.newInstance(url, username, password, driver),"tblResource",resultResource)
+      // insertIntoCashflowTable(Sql.newInstance(url, username, password, driver),"tblCapitalCashflow",resultCapital)
+      // insertIntoCashflowTable(Sql.newInstance(url, username, password, driver),"tblExpenseCashflow" ,resultExpense)
+      // insertIntoBudgetTable(Sql.newInstance(url, username, password, driver),"tblBudget" ,resultCapital)
 
     }
 
