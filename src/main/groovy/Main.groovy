@@ -1,15 +1,10 @@
 /**
  * Created by lucasj8 on 5/29/2016.
  */
-
-import GroovyExcelParser
-import Connect
 import groovy.sql.Sql
+import extract.ExcelBuilder
 import tables.TblResource
-
-import java.sql.Connection
-import java.sql.PreparedStatement
-import java.util.Random
+import extract.ReadWriteExcelFile
 
 class Main {
     static String excel = 'C:\\Users\\lucasj8\\Downloads\\MasterProjectPortfolio.xlsx'
@@ -18,7 +13,9 @@ class Main {
     static String password = ""
     static String driver = "net.ucanaccess.jdbc.UcanaccessDriver"
     static Random rand = new Random()
+    static String currentFile = System.getProperty("user.dir") +"\\resources\\ppms.xlsx"
 
+    static String currentFile2 = System.getProperty("user.dir") +"\\resources\\ppms.xls"
     static int max = 100000
     static int reportToMax = 100.00
     static int sppmMax =  10
@@ -30,21 +27,15 @@ class Main {
 
     public static main(args) {
         Sql sql = Sql.newInstance(url, username, password, driver)
-        TblResource resource =  new TblResource("C:\\Users\\lucasj8\\Desktop\\ppms.xslx")
-        resource.readExcel()
-        /*GroovyExcelParser parser = new GroovyExcelParser()
-        def (headers, rows) = parser.parse(excel, 2)
-        println 'Headers'
-        println '------------------'
-        headers.each { header ->
-            println header
-        }
-        println "\n"
-        println 'Rows'
-        println '------------------'
-        rows.each { row ->
-            println parser.toXml(headers, row)
-        }*/
+      // new ExcelBuilder(currentFile).eachLine {
+       //    println "First column on row ${it.rowNum} = ${cell(0)}"
+      // }
+      //  TblResource resource =  new TblResource(currentFile)
+       // resource.readExcel()
+          ReadWriteExcelFile file = new ReadWriteExcelFile();
+        file.readXLSXFile(currentFile);
+
+
 
         //Connect sql = new Connect(url,username,password,driver)
 
