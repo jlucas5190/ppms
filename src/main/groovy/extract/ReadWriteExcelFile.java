@@ -10,6 +10,9 @@ import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.openxml4j.opc.OPCPackage;
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
@@ -90,9 +93,10 @@ public class ReadWriteExcelFile {
     //    InputStream ExcelFileToRead = new FileInputStream(file);
         File objFile = new File(file);
         OPCPackage opcPackage = OPCPackage.open(objFile);
-        XSSFWorkbook  wb = new XSSFWorkbook(opcPackage);
+        Workbook  wb = WorkbookFactory.create(new File(file));
+       // XSSFWorkbook  wb = new XSSFWorkbook(opcPackage);
 
-        XSSFSheet sheet = wb.getSheetAt(0);
+        Sheet sheet = wb.getSheetAt(0);
         XSSFRow row;
         XSSFCell cell;
 
