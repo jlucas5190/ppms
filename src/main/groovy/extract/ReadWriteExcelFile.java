@@ -9,6 +9,7 @@ import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
+import org.apache.poi.openxml4j.exceptions.OpenXML4JException;
 import org.apache.poi.openxml4j.opc.OPCPackage;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
@@ -17,6 +18,8 @@ import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.apache.poi.xssf.eventusermodel.XSSFReader;
+import org.apache.poi.xssf.model.SharedStringsTable;
 
 public class ReadWriteExcelFile {
 
@@ -89,14 +92,25 @@ public class ReadWriteExcelFile {
         fileOut.close();
     }
 
-    public static void readXLSXFile(String file) throws IOException, InvalidFormatException {
-    //    InputStream ExcelFileToRead = new FileInputStream(file);
-        File objFile = new File(file);
-        OPCPackage opcPackage = OPCPackage.open(objFile);
+    public static void readXLSXFile(String file) throws IOException, InvalidFormatException, OpenXML4JException {
+        OPCPackage opcPackage = OPCPackage.open(file);
         Workbook  wb = WorkbookFactory.create(new File(file));
+        XSSFReader xssfReader = new XSSFReader(opcPackage);
+        SharedStringsTable sst = xssfReader.getSharedStringsTable();
+        XSSFReader.SheetIterator itr = (XSSFReader.SheetIterator)xssfReader.getSheetsData();
+        
+           while(itr.hasNext()) {
+            InputStream sheetStream = itr.next();
+           // if(itr.getSheetName().equals(sheetName)) {  // Or you can keep track of sheet numbers
+            //    in = sheetStream;
+            // return;
+           // } else {
+           sheetStream.close();
+    }
+}
        // XSSFWorkbook  wb = new XSSFWorkbook(opcPackage);
 
-        Sheet sheet = wb.getSheetAt(0);
+    /*    Sheet sheet = wb.getSheetAt(0);
         XSSFRow row;
         XSSFCell cell;
 
@@ -125,9 +139,9 @@ public class ReadWriteExcelFile {
             }
             System.out.println();
         }
-
+ 
     }
-
+*/
     public static void writeXLSXFile() throws IOException {
 
         String excelFileName = "C:/Test.xlsx";//name of excel file

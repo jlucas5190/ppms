@@ -1,21 +1,24 @@
+
 /**
  * Created by lucasj8 on 5/29/2016.
  */
 import groovy.sql.Sql
+import org.apache.poi.openxml4j.opc.OPCPackage
 import extract.ExcelBuilder
 import tables.TblResource
 import extract.ReadWriteExcelFile
+import extract.XLSX2CSV
 
 class Main {
-    static String excel = 'C:\\Users\\lucasj8\\Downloads\\MasterProjectPortfolio.xlsx'
-    static String url = "jdbc:ucanaccess://C://Users//lucasj8//Documents//ppms0.9.2.beta_OFFLINE.accdb"
+    
+    static String url = "jdbc:ucanaccess://"+System.getProperty("user.dir")+"\\resources\\ppms0.11.1.beta.accdb"
     static String username = ""
     static String password = ""
     static String driver = "net.ucanaccess.jdbc.UcanaccessDriver"
     static Random rand = new Random()
-    static String currentFile = System.getProperty("user.dir") +"\\resources\\ppms.xlsx"
+    static String currentFile = System.getProperty("user.dir") +"\\resources\\ppms_resource.xlsx"
 
-    static String currentFile2 = System.getProperty("user.dir") +"\\resources\\ppms.xls"
+   
     static int max = 100000
     static int reportToMax = 100.00
     static int sppmMax =  10
@@ -32,9 +35,23 @@ class Main {
       // }
       //  TblResource resource =  new TblResource(currentFile)
        // resource.readExcel()
-          ReadWriteExcelFile file = new ReadWriteExcelFile();
-        file.readXLSXFile(currentFile);
+       //   ReadWriteExcelFile file = new ReadWriteExcelFile();
+        //file.readXLSXFile(currentFile);
+         File xlsxFile = new File(currentFile);
+        if (!xlsxFile.exists()) {
+            System.err.println("Not found or not a file: " + xlsxFile.getPath());
+            return;
+        }
 
+        int minColumns = -1;
+        if (args.length >= 2)
+            minColumns = Integer.parseInt(args[1]);
+
+        // The package open is instantaneous, as it should be.
+         OPCPackage p = OPCPackage.open(xlsxFile.getPath());
+		XLSX2CSV xlsx2csv = new XLSX2CSV(p, System.out, minColumns);
+		xlsx2csv.process();
+		p.close();
 
 
         //Connect sql = new Connect(url,username,password,driver)
@@ -54,7 +71,31 @@ class Main {
       // insertIntoBudgetTable(Sql.newInstance(url, username, password, driver),"tblBudget" ,resultCapital)
 
     }
+ /*
+   public static void main(String[] args) throws Exception {
+        if (args.length < 1) {
+            System.err.println("Use:");
+            System.err.println("  XLSX2CSV <xlsx file> [min columns]");
+            return;
+        }
 
+        File xlsxFile = new File(args[0]);
+        if (!xlsxFile.exists()) {
+            System.err.println("Not found or not a file: " + xlsxFile.getPath());
+            return;
+        }
+
+        int minColumns = -1;
+        if (args.length >= 2)
+            minColumns = Integer.parseInt(args[1]);
+
+        // The package open is instantaneous, as it should be.
+        OPCPackage p = OPCPackage.open(xlsxFile.getPath(), PackageAccess.READ);
+		XLSX2CSV xlsx2csv = new XLSX2CSV(p, System.out, minColumns);
+		xlsx2csv.process();
+		p.close();
+	}
+         */
     def static deleteAllFromTable(Sql sql, String table){
         try {
            def re = sql.execute("DELETE * FROM tblBUDGET;")
