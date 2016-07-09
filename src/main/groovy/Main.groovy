@@ -8,6 +8,7 @@ import extract.ExcelBuilder
 import tables.TblResource
 import extract.ReadWriteExcelFile
 import extract.XLSX2CSV
+import static com.xlson.groovycsv.CsvParser.parseCsv
 
 class Main {
     
@@ -16,7 +17,7 @@ class Main {
     static String password = ""
     static String driver = "net.ucanaccess.jdbc.UcanaccessDriver"
     static Random rand = new Random()
-    static String currentFile = System.getProperty("user.dir") +"\\resources\\ppms_resource.xlsx"
+    static String currentFile = System.getProperty("user.dir") +"\\resources\\projects.csv"
 
    
     static int max = 100000
@@ -37,21 +38,20 @@ class Main {
        // resource.readExcel()
        //   ReadWriteExcelFile file = new ReadWriteExcelFile();
         //file.readXLSXFile(currentFile);
-         File xlsxFile = new File(currentFile);
+        /* File xlsxFile = new File(currentFile);
         if (!xlsxFile.exists()) {
             System.err.println("Not found or not a file: " + xlsxFile.getPath());
             return;
-        }
+        }*/
+        
+        def data = parseCsv(currentFile)
+        
+        for(line in data) {
+       println "$line.prefix"
+       }
 
-        int minColumns = -1;
-        if (args.length >= 2)
-            minColumns = Integer.parseInt(args[1]);
 
-        // The package open is instantaneous, as it should be.
-         OPCPackage p = OPCPackage.open(xlsxFile.getPath());
-		XLSX2CSV xlsx2csv = new XLSX2CSV(p, System.out, minColumns);
-		xlsx2csv.process();
-		p.close();
+     
 
 
         //Connect sql = new Connect(url,username,password,driver)
