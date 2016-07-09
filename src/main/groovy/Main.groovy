@@ -4,11 +4,12 @@
  */
 import groovy.sql.Sql
 import org.apache.poi.openxml4j.opc.OPCPackage
-import extract.ExcelBuilder
+import extract.ProjectExtract
 import tables.TblResource
 import extract.ReadWriteExcelFile
 import extract.XLSX2CSV
-import static com.xlson.groovycsv.CsvParser.parseCsv
+
+
 
 class Main {
     
@@ -38,18 +39,17 @@ class Main {
        // resource.readExcel()
        //   ReadWriteExcelFile file = new ReadWriteExcelFile();
         //file.readXLSXFile(currentFile);
-        /* File xlsxFile = new File(currentFile);
-        if (!xlsxFile.exists()) {
+      //  File xlsxFile = new File(currentFile);
+      /*  if (!xlsxFile.exists()) {
             System.err.println("Not found or not a file: " + xlsxFile.getPath());
             return;
         }*/
+          
+        ProjectExtract project =  new ProjectExtract(currentFile, sql)
+        def data = project.getData()
         
-        def data = parseCsv(currentFile)
-        
-        for(line in data) {
-       println "$line.prefix"
-       }
-
+       data.each {println it}
+      
 
      
 
