@@ -27,21 +27,54 @@ class ProjectExtract {
        
          def projectList = []
         for(item in data){
-            projectList.add( [ProjectNo: item.projectNo , 
-                              ProjectTitle:item.projectTitle, 
-                               BuisnessCase:item.businessCase, 
+            projectList.add( [projectNo: item.projectNo ,
+                              projectTitle:item.projectTitle,
+                               buisnessCase:item.businessCase,
                                 CAPrefix: item.Prefix,
-                                BuisnessDriver: getBuisnessDriver(item.businessDriver)
+                                buisnessDriver: getBuisnessDriver(item.businessDriver),
+                                category: getCategory(item.category),
+                                globalType: getGlobalType(item.globalType),
+                                SPPM: getSPPM(item.SPPM),
+                              SME: getSME(item.SME)
                             ])
         }
      return   projectList 
    }
    
-    def getBuisnessDriver(String tmpDriver){
-      sql.eachRow( "select ID FROM tblBuisnessDriver where BuisnessDriver=$tmpDriver;" ){ row->
-                results = row.ID
-        }
-        return  results   
+    def getBuisnessDriver(String tmp){
+        def results =sql.firstRow( "select ID FROM tblBuisnessDriver where BuisnessDriver=${tmp}") ?: sql.firstRow( "select ID FROM tblBuisnessDriver where BuisnessDriver='TBD'")
+        results.ID
+    }
+
+    def getCategory(String tmp){
+        def results =sql.firstRow( "select ID FROM tblCategory where Category=${tmp}") ?: sql.firstRow( "select ID FROM tblCategory where Category='TBD'")
+        results.ID
+    }
+
+    def getGlobalType(String tmp){
+        def results =sql.firstRow( "select ID FROM tblGlobalType where GlobalType=${tmp}") ?: sql.firstRow( "select ID FROM tblGlobalType where GlobalType='TBD'")
+        return  results.ID
+    }
+
+
+    def getSPPM(String tmp){
+        def results =sql.firstRow( "select ID FROM tblSPPM where SPPM=${tmp}")?: [ID:10]
+        return  results.ID
+    }
+
+    def getSME(String tmp){
+        def results =sql.firstRow( "select ID FROM tblSME where SME=${tmp}")?: [ID:9]
+         return  results.ID
+    }
+
+    def insertIntoProjectTable(ArrayList items){
+         items.each { item ->
+              def re = sql.executeInsert("INSERT into tblPortfolio (ProjectNo, ProjectTitle, BuisnessCase, CAPrefix, BuisnessDriver, Category, GlobalType, SPPM, SME) values (  $item.projectNo , $item.projectTitle, $item.businessCase, $item.Prefix, $item.businessDriver, $item.category, $item.globalType, $item.SPPM, $item.SME);")
+                }
+         }
+
+    def deleteAll(){
+         return sql.execute( "delete * from tblPortfolio;")
     }
     
 

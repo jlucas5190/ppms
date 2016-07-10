@@ -47,12 +47,14 @@ class Main {
           
         ProjectExtract project =  new ProjectExtract(currentFile, sql)
         def data = project.getData()
+            project.deleteAll()
+           project.insertIntoProjectTable(data)
         
-       data.each {println it}
-      
+       //data.each {println it}
 
-     
 
+
+        sql.close()
 
         //Connect sql = new Connect(url,username,password,driver)
 
