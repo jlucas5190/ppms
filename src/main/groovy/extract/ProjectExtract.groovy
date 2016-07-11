@@ -12,7 +12,7 @@ import groovy.sql.Sql
  *
  * @author za802e
  */
-class ProjectExtract {
+class ProjectExtract extends  Extract{
    def csvFile
    def sql
    ProjectExtract(String csvFile, Sql sql){
@@ -29,10 +29,10 @@ class ProjectExtract {
         for(item in data){
             projectList.add( [projectNo: item.projectNo ,
                               projectTitle:item.projectTitle,
-                               buisnessCase:item.businessCase,
+                              businessCase: item.businessCase,
                                 CAPrefix: item.Prefix,
-                                buisnessDriver: getBuisnessDriver(item.businessDriver),
-                                category: getCategory(item.category),
+                              businessDriver: getBuisnessDriver(item.businessDriver),
+                              category: getCategory(item.category),
                                 globalType: getGlobalType(item.globalType),
                                 SPPM: getSPPM(item.SPPM),
                               SME: getSME(item.SME)
@@ -69,7 +69,7 @@ class ProjectExtract {
 
     def insertIntoProjectTable(ArrayList items){
          items.each { item ->
-              def re = sql.executeInsert("INSERT into tblPortfolio (ProjectNo, ProjectTitle, BuisnessCase, CAPrefix, BuisnessDriver, Category, GlobalType, SPPM, SME) values (  $item.projectNo , $item.projectTitle, $item.businessCase, $item.Prefix, $item.businessDriver, $item.category, $item.globalType, $item.SPPM, $item.SME);")
+              def re = sql.executeInsert("INSERT into tblPortfolio (ProjectNo, ProjectTitle, BuisnessCase, CAPrefix, BuisnessDriver, Category, GlobalType, SPPM, SME) values (  $item.projectNo , $item.projectTitle, $item.businessCase, $item.CAPrefix, $item.businessDriver, $item.category, $item.globalType, $item.SPPM, $item.SME);")
                 }
          }
 
