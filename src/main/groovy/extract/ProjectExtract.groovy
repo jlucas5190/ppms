@@ -6,27 +6,21 @@
 
 package extract
 import com.xlson.groovycsv.CsvParser
+import groovy.transform.InheritConstructors
 
-import groovy.sql.Sql
+
 /**
  *
  * @author za802e
  */
+@InheritConstructors
 class ProjectExtract extends  Extract{
-   def csvFile
-   def sql
-   ProjectExtract(String csvFile, Sql sql){
-       this.csvFile = csvFile
-       this.sql = sql
-   }
-	
-   def getData(){
-        // File file = new File (fileName)
-       BufferedReader bufferReader = new BufferedReader(new FileReader(csvFile))         
-       def data  = CsvParser.parseCsv(bufferReader)
+  
+    
+    def parseData(){
        
          def projectList = []
-        for(item in data){
+                for(item in data){
             projectList.add( [projectNo: item.projectNo ,
                               projectTitle:item.projectTitle,
                               businessCase: item.businessCase,
@@ -38,9 +32,8 @@ class ProjectExtract extends  Extract{
                               SME: getSME(item.SME)
                             ])
         }
-     return   projectList 
-   }
-   
+     return projectList      
+    }
     def getBuisnessDriver(String tmp){
         def results =sql.firstRow( "select ID FROM tblBuisnessDriver where BuisnessDriver=${tmp}") ?: sql.firstRow( "select ID FROM tblBuisnessDriver where BuisnessDriver='TBD'")
         results.ID

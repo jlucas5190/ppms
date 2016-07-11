@@ -4,7 +4,7 @@
  */
 import groovy.sql.Sql
 import org.apache.poi.openxml4j.opc.OPCPackage
-import extract.ProjectExtract
+import extract.*
 import tables.TblResource
 import extract.ReadWriteExcelFile
 import extract.XLSX2CSV
@@ -18,7 +18,8 @@ class Main {
     static String password = ""
     static String driver = "net.ucanaccess.jdbc.UcanaccessDriver"
     static Random rand = new Random()
-    static String currentFile = System.getProperty("user.dir") +"\\resources\\projects.csv"
+    static String projectFile = System.getProperty("user.dir") +"\\resources\\projects.csv"
+    static String resourcesFile = System.getProperty("user.dir") +"\\resources\\resources.csv"
 
    
     static int max = 100000
@@ -45,13 +46,14 @@ class Main {
             return;
         }*/
           
-        ProjectExtract project =  new ProjectExtract(currentFile, sql)
-        def data = project.getData()
-
+       // ProjectExtract project =  new ProjectExtract(projectFile, sql)
+          ResourceExtract resource = new ResourceExtract(resourcesFile, sql)
+     
+        def parsedData = resource.parseData()     
          //   project.deleteAll()
       //   project.insertIntoProjectTable(data)
         
-      data.each {println it}
+      parsedData.each {println it}
 
 
 
