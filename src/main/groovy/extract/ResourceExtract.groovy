@@ -16,9 +16,12 @@ import groovy.transform.InheritConstructors
 class ResourceExtract extends  Extract{
     def parseData(){
            def resourceList = []
+
       
-           for (i = 0; i < data.projectNo.size(); i++){
-                  def projectNo = data.projectNo[1]
+        //   for (int i = 0; i < data.projectNo.size(); i++){
+        for (line in data){
+
+                  def projectNo = 1
                   def projectIndicator = 2
                   def program = 3
              

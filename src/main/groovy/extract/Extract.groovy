@@ -24,4 +24,8 @@ abstract class Extract {
         def results =sql.firstRow( "select ID FROM tblPortfolio where ProjectNo=${tmp}") ?: [ID:'N\"A']
         results.ID
     }
+
+    def getData(){
+        return this.data
+    }
 }

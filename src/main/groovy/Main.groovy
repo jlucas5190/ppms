@@ -48,12 +48,12 @@ class Main {
           
        // ProjectExtract project =  new ProjectExtract(projectFile, sql)
           ResourceExtract resource = new ResourceExtract(resourcesFile, sql)
-     
-        def parsedData = resource.parseData()     
+          def data = resource.getData()
+        //def parsedData = resource.parseData()
          //   project.deleteAll()
       //   project.insertIntoProjectTable(data)
         
-      parsedData.each {println it}
+     data.each {println it.toMap()}
 
 
 
