@@ -16,12 +16,13 @@ abstract class Extract {
        this.data = CsvParser.parseCsv(bufferReader)        
          }
    abstract parseData()
+   abstract insertIntoTable(ArrayList items)
     def removeSpecialCharacters(String s){
         return s.replace("[ ](?=[ ])|[^-_,A-Za-z0-9 ]+", "");
     }
     
       def getProjectNo (String tmp){
-        def results =sql.firstRow( "select ID FROM tblPortfolio where ProjectNo=${tmp}") ?: [ID:'N\"A']
+        def results =sql.firstRow( "select ID FROM tblPortfolio where ProjectNo=${tmp}") ?: sql.firstRow( "select ID FROM tblPortfolio where ProjectNo='TBD'") 
         results.ID
     }
 

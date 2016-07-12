@@ -36,12 +36,12 @@ class ProjectExtract extends  Extract{
     }
     def getBuisnessDriver(String tmp){
         def results =sql.firstRow( "select ID FROM tblBuisnessDriver where BuisnessDriver=${tmp}") ?: sql.firstRow( "select ID FROM tblBuisnessDriver where BuisnessDriver='TBD'")
-        results.ID
+        return results.ID
     }
 
     def getCategory(String tmp){
         def results =sql.firstRow( "select ID FROM tblCategory where Category=${tmp}") ?: sql.firstRow( "select ID FROM tblCategory where Category='TBD'")
-        results.ID
+        return results.ID
     }
 
     def getGlobalType(String tmp){
@@ -60,7 +60,7 @@ class ProjectExtract extends  Extract{
          return  results.ID
     }
 
-    def insertIntoProjectTable(ArrayList items){
+    def insertIntoTable(ArrayList items){
          items.each { item ->
               def re = sql.executeInsert("INSERT into tblPortfolio (ProjectNo, ProjectTitle, BuisnessCase, CAPrefix, BuisnessDriver, Category, GlobalType, SPPM, SME) values (  $item.projectNo , $item.projectTitle, $item.businessCase, $item.CAPrefix, $item.businessDriver, $item.category, $item.globalType, $item.SPPM, $item.SME);")
                 }

@@ -45,3 +45,7 @@ task runScript (dependsOn: 'classes', type: JavaExec) {
     main = 'Main'
     classpath = sourceSets.main.runtimeClasspath
 }
+
+if (!hasProperty('mainClass')) {
+    ext.mainClass = 'Main'
+}
