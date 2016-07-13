@@ -112,12 +112,12 @@ class ResourceExtract extends  Extract{
     }
  
     def getProjectIndicator(String tmp){
-        def results =sql.firstRow( "select ID FROM tblProjectIndicator where ProjectIndicator=${tmp}") ?: sql.firstRow( "select ID FROM tblProjectIndicator where ProjectIndicator='TBD'")
+        def results =sql.firstRow( "select ID FROM tblProjectIndicator where ProjectIndicator LIKE(${tmp})") ?: sql.firstRow( "select ID FROM tblProjectIndicator where ProjectIndicator LIKE('TBD')")
         return results.ID
     }
 
       def getProgram(String tmp){
-        def results =sql.firstRow( "select ID FROM tblProgram where Program=${tmp}") ?: sql.firstRow( "select ID FROM tblProgram where Program='TBD'")
+        def results =sql.firstRow( "select ID FROM tblProgramType where ProgramType LIKE(${tmp})") ?: [ID:8]
         return results.ID
     }
     

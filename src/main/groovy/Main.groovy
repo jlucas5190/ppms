@@ -50,9 +50,8 @@ class Main {
           ResourceExtract resource = new ResourceExtract(resourcesFile, sql)
           def parsedData = resource.parseData()
          //   project.deleteAll()
-         resource.insertIntoTable(parsedData)
-        
-    // parsedData.each {println it}
+        resource.insertIntoTable(parsedData)
+        //parsedData.each {println it}
 
 
 
