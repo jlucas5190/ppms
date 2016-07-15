@@ -50,9 +50,13 @@ class Main {
           ResourceExtract resource = new ResourceExtract(resourcesFile, sql)
           def parsedData = resource.parseData()
          //   project.deleteAll()
-        resource.insertIntoTable(parsedData)
+     //    resource.insertIntoTable(parsedData)
         //parsedData.each {println it}
 
+
+        BudgetExtract budget = new BudgetExtract(resourcesFile, sql)
+        def budgetData = budget.parseData()
+        budgetData.each {println it}
 
 
         sql.close()
