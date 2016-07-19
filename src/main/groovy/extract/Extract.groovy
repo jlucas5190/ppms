@@ -18,7 +18,13 @@ abstract class Extract {
    abstract parseData()
    abstract insertIntoTable(ArrayList items)
     def removeSpecialCharacters(String s){
-        return s.replace("[ ](?=[ ])|[^-_,A-Za-z0-9 ]+", "");
+        s = s.replace("[ ](?=[ ])|[^-_,A-Za-z0-9 ]+", "");
+        s = s.replace(" ", "")
+        s = s. replace(",", "")
+        s = s.replace("\$", "")       
+        s = s.replace("(", "-")   
+        s = s.replace(")", "")   
+        return s.toString()
     }
     
       def getProjectNo (String tmp){

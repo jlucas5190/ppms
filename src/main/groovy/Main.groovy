@@ -21,6 +21,7 @@ class Main {
     static String projectFile = System.getProperty("user.dir") +"\\resources\\projects.csv"
     static String resourcesFile = System.getProperty("user.dir") +"\\resources\\resources.csv"
     static String budgetFile = System.getProperty("user.dir") +"\\resources\\budget.csv"
+        static String cashflowFile = System.getProperty("user.dir") +"\\resources\\cashflow.csv"
 
    
     static int max = 100000
@@ -48,18 +49,26 @@ class Main {
         }*/
           
        // ProjectExtract project =  new ProjectExtract(projectFile, sql)
-          ResourceExtract resource = new ResourceExtract(resourcesFile, sql)
-          def parsedData = resource.parseData()
+          //ResourceExtract resource = new ResourceExtract(resourcesFile, sql)
+          //def parsedData = resource.parseData()
          //   project.deleteAll()
-     //    resource.insertIntoTable(parsedData)
+     //    
         //parsedData.each {println it}
 
 
-        BudgetExtract budget = new BudgetExtract(resourcesFile, sql)
-        def budgetData = budget.parseData()
-        budgetData.each {println it}
-
-
+        //BudgetExtract budget = new BudgetExtract(budgetFile, sql)
+        //def budgetData = budget.parseData()
+      //  budgetData.each {println it}
+         // budget.insertIntoTable(budgetData)
+          
+        
+        CashflowExtract cashflow = new CashflowExtract(cashflowFile, sql)
+        cashflow.parseData()
+       //  cashflow.getCashflowData().each {println it}
+         CashflowExtract expenseflow = new CashflowExtract(cashflowFile, sql)
+        expenseflow.parseData()
+         expenseflow.getExpenseData().each {println it}
+        
         sql.close()
 
         //Connect sql = new Connect(url,username,password,driver)

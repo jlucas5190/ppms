@@ -8,6 +8,8 @@ package extract
 
 
 import groovy.transform.InheritConstructors
+
+import java.text.NumberFormat
 /**
  *
  * @author za802e
@@ -20,81 +22,261 @@ class BudgetExtract extends  Extract{
             if(!item.projectNo.isEmpty()){
                   def projectNo = getProjectNo(item.projectNo)
 
-            //Roche_curr    
+          //CURR
            budgetList.add( [projectNo: projectNo ,
+                             budgetCycle:  4, //CURR
                               budgetYear : 2, //2016
-                              budgetCycle: 4, //CURR
-                              captial: getItem(item.r_curr_jan_2016) ,
-                              expense: getItem(item.r_curr_feb_2016)
+                             forecastYear: 2 , //2016  
+                             captial: getItem(item.curr_2016_capital) ,
+                              expense: getItem(item.curr_2016_expense)
                               ])
-            //External_curr             
-    /*   resourceList.add( [projectNo: projectNo ,
-                              projectIndicator: projectIndicator,
-                              program: program,
-                              resourceType: 2, //External
-                              budgetYear : 2, //2016
-                              budgetCycle: 4, //CURR
-                              jan: getItem(item.e_curr_jan_2016) ,
-                              feb: getItem(item.e_curr_feb_2016) ,
-                              mar: getItem(item.e_curr_mar_2016) ,
-                              apr: getItem(item.e_curr_apr_2016) ,
-                              may: getItem(item.e_curr_may_2016) ,
-                              jun: getItem(item.e_curr_jun_2016) ,
-                              jul: getItem(item.e_curr_jul_2016) ,
-                              aug: getItem(item.e_curr_aug_2016) ,
-                              sep: getItem(item.e_curr_sep_2016) ,
-                              oct: getItem(item.e_curr_oct_2016) ,
-                              nov: getItem(item.e_curr_nov_2016) ,
-                              dec: getItem(item.e_curr_dec_2016) 
-                              ]) 
                           
-                 //Roche_t3    
-           resourceList.add( [projectNo: projectNo ,
-                              projectIndicator: projectIndicator,
-                              program: program,
-                              resourceType: 1, //Roche
+            budgetList.add( [projectNo: projectNo ,
+                             budgetCycle:  4, //CURR
                               budgetYear : 2, //2016
-                              budgetCycle: 3, //T3
-                              jan: getItem(item.r_t3_jan_2016) ,
-                              feb: getItem(item.r_t3_feb_2016) ,
-                              mar: getItem(item.r_t3_mar_2016) ,
-                              apr: getItem(item.r_t3_apr_2016) ,
-                              may: getItem(item.r_t3_may_2016) ,
-                              jun: getItem(item.r_t3_jun_2016) ,
-                              jul: getItem(item.r_t3_jul_2016) ,
-                              aug: getItem(item.r_t3_aug_2016) ,
-                              sep: getItem(item.r_t3_sep_2016) ,
-                              oct: getItem(item.r_t3_oct_2016) ,
-                              nov: getItem(item.r_t3_nov_2016) ,
-                              dec: getItem(item.r_t3_dec_2016) 
+                             forecastYear: 3 , //2017  
+                             captial: getItem(item.curr_2017_capital) ,
+                              expense: getItem(item.curr_2017_expense)
                               ])
-            //External_curr             
-       resourceList.add( [projectNo: projectNo ,
-                              projectIndicator: projectIndicator,
-                              program: program,
-                              resourceType: 2, //External
+             
+             budgetList.add( [projectNo: projectNo ,
+                             budgetCycle:  4, //CURR
                               budgetYear : 2, //2016
-                              budgetCycle: 3, //t3
-                              jan: getItem(item.e_t3_jan_2016) ,
-                              feb: getItem(item.e_t3_feb_2016) ,
-                              mar: getItem(item.e_t3_mar_2016) ,
-                              apr: getItem(item.e_t3_apr_2016) ,
-                              may: getItem(item.e_t3_may_2016) ,
-                              jun: getItem(item.e_t3_jun_2016) ,
-                              jul: getItem(item.e_t3_jul_2016) ,
-                              aug: getItem(item.e_t3_aug_2016) ,
-                              sep: getItem(item.e_t3_sep_2016) ,
-                              oct: getItem(item.e_t3_oct_2016) ,
-                              nov: getItem(item.e_t3_nov_2016) ,
-                              dec: getItem(item.e_t3_dec_2016) 
-                              ])      
-           */ }
+                             forecastYear: 4 , //2019  
+                             captial: getItem(item.curr_2018_capital) ,
+                              expense: getItem(item.curr_2018_expense)
+                              ])     
+                          
+              budgetList.add( [projectNo: projectNo ,
+                             budgetCycle:  4, //CURR
+                              budgetYear : 2, //2016
+                             forecastYear: 5 , //2019  
+                             captial: getItem(item.curr_2019_capital) ,
+                              expense: getItem(item.curr_2019_expense)
+                              ])     
+                          
+              budgetList.add( [projectNo: projectNo ,
+                             budgetCycle:  4, //CURR
+                              budgetYear : 2, //2016
+                             forecastYear: 6 , //2020  
+                             captial: getItem(item.curr_2020_capital) ,
+                              expense: getItem(item.curr_2020_expense)
+                              ])     
+              budgetList.add( [projectNo: projectNo ,
+                             budgetCycle:  4, //CURR
+                              budgetYear : 2, //2016
+                             forecastYear: 7 , //2021  
+                             captial: getItem(item.curr_2021_capital) ,
+                              expense: getItem(item.curr_2021_expense)
+                              ])   
+                
+               budgetList.add( [projectNo: projectNo ,
+                             budgetCycle:  4, //CURR
+                              budgetYear : 2, //2016
+                             forecastYear: 8 , //2022  
+                             captial: getItem(item.curr_2022_capital) ,
+                              expense: getItem(item.curr_2022_expense)
+                              ])  
+                          
+                 //t0
+           budgetList.add( [projectNo: projectNo ,
+                             budgetCycle:  1, //t0
+                              budgetYear : 2, //2016
+                             forecastYear: 2 , //2016  
+                             captial: getItem(item.t0_2016_capital) ,
+                              expense: getItem(item.t0_2016_expense)
+                              ])
+                          
+            budgetList.add( [projectNo: projectNo ,
+                             budgetCycle:  1, //t0
+                              budgetYear : 2, //2016
+                             forecastYear: 3 , //2017  
+                             captial: getItem(item.t0_2017_capital) ,
+                              expense: getItem(item.t0_2017_expense)
+                              ])
+             
+             budgetList.add( [projectNo: projectNo ,
+                             budgetCycle:  1, //t0
+                              budgetYear : 2, //2016
+                             forecastYear: 4 , //2019  
+                             captial: getItem(item.t0_2018_capital) ,
+                              expense: getItem(item.t0_2018_expense)
+                              ])     
+                          
+              budgetList.add( [projectNo: projectNo ,
+                             budgetCycle:  1, //t0
+                              budgetYear : 2, //2016
+                             forecastYear: 5 , //2019  
+                             captial: getItem(item.t0_2019_capital) ,
+                              expense: getItem(item.t0_2019_expense)
+                              ])     
+                          
+              budgetList.add( [projectNo: projectNo ,
+                             budgetCycle:  1, //t0
+                              budgetYear : 2, //2016
+                             forecastYear: 6 , //2020  
+                             captial: getItem(item.t0_2020_capital) ,
+                              expense: getItem(item.t0_2020_expense)
+                              ])     
+              budgetList.add( [projectNo: projectNo ,
+                             budgetCycle:  1, //t0
+                              budgetYear : 2, //2016
+                             forecastYear: 7 , //2021  
+                             captial: getItem(item.t0_2021_capital) ,
+                              expense: getItem(item.t0_2021_expense)
+                              ])   
+            //m05
+           budgetList.add( [projectNo: projectNo ,
+                             budgetCycle:  2, //m05
+                              budgetYear : 2, //2016
+                             forecastYear: 2 , //2016  
+                             captial: getItem(item.m05_2016_capital) ,
+                              expense: getItem(item.m05_2016_expense)
+                              ])
+                          
+            budgetList.add( [projectNo: projectNo ,
+                             budgetCycle:  2, //m05
+                              budgetYear : 2, //2016
+                             forecastYear: 3 , //2017  
+                             captial: getItem(item.m05_2017_capital) ,
+                              expense: getItem(item.m05_2017_expense)
+                              ])
+             
+             budgetList.add( [projectNo: projectNo ,
+                             budgetCycle:  2, //m05
+                              budgetYear : 2, //2016
+                             forecastYear: 4 , //2019  
+                             captial: getItem(item.m05_2018_capital) ,
+                              expense: getItem(item.m05_2018_expense)
+                              ])     
+                          
+              budgetList.add( [projectNo: projectNo ,
+                             budgetCycle:  2, //m05
+                              budgetYear : 2, //2016
+                             forecastYear: 5 , //2019  
+                             captial: getItem(item.m05_2019_capital) ,
+                              expense: getItem(item.m05_2019_expense)
+                              ])     
+                          
+              budgetList.add( [projectNo: projectNo ,
+                             budgetCycle:  2, //m05
+                              budgetYear : 2, //2016
+                             forecastYear: 6 , //2020  
+                             captial: getItem(item.m05_2020_capital) ,
+                              expense: getItem(item.m05_2020_expense)
+                              ])     
+              budgetList.add( [projectNo: projectNo ,
+                             budgetCycle:  2, //m05
+                              budgetYear : 2, //2016
+                             forecastYear: 7 , //2021  
+                             captial: getItem(item.m05_2021_capital) ,
+                              expense: getItem(item.m05_2021_expense)
+                              ])   
+                          
+                  //t3
+		budgetList.add( [projectNo: projectNo ,
+                             budgetCycle:  3, //t3
+                              budgetYear : 1, //2015
+                             forecastYear: 1 , //2015  
+                             captial: getItem(item.t3_2015_capital) ,
+                              expense: getItem(item.t3_2015_expense)
+                              ])   
+							  
+           budgetList.add( [projectNo: projectNo ,
+                             budgetCycle:  3, //t3
+                              budgetYear : 1, //2015
+                             forecastYear: 2 , //2016  
+                             captial: getItem(item.t3_2016_capital) ,
+                              expense: getItem(item.t3_2016_expense)
+                              ])
+                          
+            budgetList.add( [projectNo: projectNo ,
+                             budgetCycle:  3, //t3
+                              budgetYear : 1, //2015
+                             forecastYear: 3 , //2017  
+                             captial: getItem(item.t3_2017_capital) ,
+                              expense: getItem(item.t3_2017_expense)
+                              ])
+             
+             budgetList.add( [projectNo: projectNo ,
+                             budgetCycle:  3, //t3
+                              budgetYear : 1, //2015
+                             forecastYear: 4 , //2018  
+                             captial: getItem(item.t3_2018_capital) ,
+                              expense: getItem(item.t3_2018_expense)
+                              ])     
+                          
+              budgetList.add( [projectNo: projectNo ,
+                             budgetCycle:  3, //t3
+                              budgetYear : 1, //2015
+                             forecastYear: 5 , //2019  
+                             captial: getItem(item.t3_2019_capital) ,
+                              expense: getItem(item.t3_2019_expense)
+                              ])     
+                          
+              budgetList.add( [projectNo: projectNo ,
+                             budgetCycle:  3, //t3
+                              budgetYear : 1, //2015
+                             forecastYear: 6 , //2020  
+                             captial: getItem(item.t3_2020_capital) ,
+                              expense: getItem(item.t3_2020_expense)
+                              ])   
+                        //t0_2015
+           budgetList.add( [projectNo: projectNo ,
+                             budgetCycle:  1, //t0
+                              budgetYear : 1, //2015
+                             forecastYear: 2 , //2016  
+                             captial: getItem(item.t0_2016_capital_2015) ,
+                              expense: getItem(item.t0_2016_expense_2015)
+                              ])
+                          
+            budgetList.add( [projectNo: projectNo ,
+                             budgetCycle:  1, //t0
+                              budgetYear : 1, //2015
+                             forecastYear: 3 , //2017  
+                             captial: getItem(item.t0_2017_capital_2015) ,
+                              expense: getItem(item.t0_2017_expense_2015)
+                              ])
+             
+             budgetList.add( [projectNo: projectNo ,
+                             budgetCycle:  1, //t0
+                              budgetYear : 1, //2015
+                             forecastYear: 4 , //2018  
+                             captial: getItem(item.t0_2018_capital_2015) ,
+                              expense: getItem(item.t0_2018_expense_2015)
+                              ])     
+                          
+              budgetList.add( [projectNo: projectNo ,
+                             budgetCycle:  1, //t0
+                              budgetYear : 1, //2015
+                             forecastYear: 5 , //2019  
+                             captial: getItem(item.t0_2019_capital_2015) ,
+                              expense: getItem(item.t0_2019_expense_2015)
+                              ])     
+                          
+              budgetList.add( [projectNo: projectNo ,
+                             budgetCycle:  1, //t0
+                              budgetYear : 1, //2015
+                             forecastYear: 6 , //2020  
+                             captial: getItem(item.t0_2020_capital_2015) ,
+                              expense: getItem(item.t0_2020_expense_2015)
+                              ])     
+              budgetList.add( [projectNo: projectNo ,
+                             budgetCycle:  1, //t0
+                              budgetYear : 1, //2015
+                             forecastYear: 7 , //2021  
+                             captial: getItem(item.t0_2021_capital_2015) ,
+                              expense: getItem(item.t0_2021_expense_2015)
+                              ]) 
+                }
     }
      return budgetList
     }
     
     def getItem(String tmp){
-        return tmp ?: '0.0' 
+        if (tmp != null) 
+       tmp = removeSpecialCharacters(tmp)
+        return tmp ?: '0' 
     }
  
     def getProjectIndicator(String tmp){
@@ -109,7 +291,7 @@ class BudgetExtract extends  Extract{
     
     def insertIntoTable(ArrayList items){
          items.each { item ->
-              def re = sql.executeInsert("INSERT into tblResource (ProjectNo, ProjectIndicator, ProgramType, ResourceType, BudgetYear, BudgetCycle, jan, feb, mar, apr, may, jun, jul, aug, sep, oct, nov, dec) values (  $item.projectNo , $item.projectIndicator, $item.program , $item.resourceType, $item.budgetYear, $item.budgetCycle, $item.jan, $item.feb, $item.mar, $item.apr, $item.may, $item.jun, $item.jul, $item.aug, $item.sep, $item.oct, $item.nov, $item.dec);")
+              def re = sql.executeInsert("INSERT into tblBudget (ProjectNo, BudgetCycle, BudgetYear, ForecastYear, Capital, Expense) values (  $item.projectNo , $item.budgetCycle, $item.budgetYear , $item.forecastYear, $item.capital, $item.expense);")
                 }
          }
 

@@ -1,8 +1,4 @@
-,MASTER PORTFOLIO,,,,,,,,,,,,,,,,,,,,,,,
-,Monthly Cashflow - 2016,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,2016,,,,,,,,,,,,,,
-,Project No.,Project Title,Credit Type ,Status,PMO Lead,SME,"Estm/
-Budg?",Type of Expend.,,Jan ,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec,2016 Current Forecast,Budget 2016 ,
+,projectNo,projectTitle,creditType,Status,SPPM,SME,Estm,type,,jan,feb,mar,apr,may,jun,jul,aug,sep,oct,nov,dec,2016 Current Forecast,Budget 2016 ,
 1,64901,MCS Peripheral Asset Replacement - 2015,,Execute,,,Estm,Capital,,$1k,$2k,,,,,$40k,,,,,,$43k,$43k,0
 ,,,,,,,Estm,Expense,,,,,,,,,,,,,,$k,$k,0
 1,64914,QC M9 TOC Analyzers,,,,,Estm,Capital,,,$17k,,,,,,,,,,,$17k,$17k,0
@@ -88,7 +84,7 @@ Budg?",Type of Expend.,,Jan ,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec,2016 Cu
 ,,,,,,,Estm,Expense,,,,,,,,,$4k,,,,,$4k,$4k,0
 1,65018,Spare Bowl for Hermetic Centrifuge,,Execute,,,Estm,Capital,,,,,,,,,,$326k,,,,$326k,$320k,6000
 ,,,,,,,Estm,Expense,,,,,,,,,,,,,,$k,$k,0
-1,65015,Lower Solid Collector for Centrifuge,,Execute,,,Estm,Capital,,,,,,,,$46k,,$86k,$10k,,,$142k,$142k,0
+1,65018,Lower Solid Collector for Centrifuge,,Execute,,,Estm,Capital,,,,,,,,$46k,,$86k,$10k,,,$142k,$142k,0
 ,,,,,,,Estm,Expense,,,,,,,,,,,,,,$k,$k,0
 0,96991,Asset Replacement 2016 - Engineering (cc642),,FXNL LT Appr,,,Estm,Capital,,,,,$55k,$55k,$55k,$55k,$55k,$55k,$55k,$55k,$55k,$494k,$494k,-3
 ,,,,,,,Estm,Expense,,,,,,,,,,,,,,$k,$k,0
@@ -142,12 +138,8 @@ Budg?",Type of Expend.,,Jan ,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec,2016 Cu
 ,,,,,,,Estm,Expense,,,,,,,,,,,,,,$k,$k,0
 1,74409,K6 Program - Project 1 - Replace DX HVAC Units,Individual,Execute,"Existing DX HVAC units use R-410A refrigerant which must be eliminated per Roche K6 directive. In Scope: DX HVAC units in 321, 322, 341, 361, and 371.",Zaymar Sedra ,Estm,Capital,,,,,,,,,,$10k,$100k,$100k,$100k,$310k,$k,310000
 ,,,,,,,Estm,Expense,,,,,,,,,,,$11k,$11k,,$22k,$k,22000
-0,,Contingency,,,,,Estm,Capital,,$k,$k,$k,$k,$k,$k,$k,$k,$k,$k,$k,$k,$k,$k,0
-,,,,#N/A,,,Estm,Expense,,,,,,,,,,,,,,$k,$k,0
 0,96999,Site Adjustment ,,TBD,,,Estm,Capital,,$k,$k,$k,$k,$k,$k,$k,$k,$k,$k,$k,$k,$k,$k,0
-,,,,,,,Estm,Expense,,-$2k,-$2k,-$2k,-$2k,-$2k,-$2k,-$1k,-$1k,-$1k,-$1k,-$1k,-$1k,-$17k,-$17k,0
-,,TOTAL Capex,,,,TOTAL,,,,"-$3,446k","$13,965k","$7,935k","$19,280k","$8,295k","$12,906k","$17,441k","$18,265k","$16,545k","$15,272k","$14,965k","$14,423k","$155,845k","$150,887k",
-,,,,,,,,,,,,,,,,,,,,,,,,
+0,96999,Site Adjustment ,,TBD,,,Estm,Expense,,$k,$k,$k,$k,$k,$k,$k,$k,$k,$k,$k,$k,$k,$k,0
 1,82000,I&C Engineering and Instrument Configuration Management System Remediation Project (CAPA 982343),,Execute 1,,,Estm,Expense,,$23k,$26k,$72k,$106k,$54k,$98k,$97k,$82k,$82k,$62k,$84k,$80k,$866k,$866k,0
 1,97003,MFG Systems Integration Improvement Phase 1 - 2015,,Execute 1,,,Estm,Expense,,,,,,$2k,$20k,$45k,$45k,$45k,$45k,$45k,$45k,$292k,$292k,0
 1,97007,Automation System Lifecycle MCS Upgrade,,Execute,,,Estm,Expense,,,,$45k,$1k,$57k,$41k,$96k,$57k,,,,,$296k,$296k,0
@@ -156,23 +148,8 @@ Budg?",Type of Expend.,,Jan ,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec,2016 Cu
 1,97058,Parking Pavement Repair,,Execute,,,Estm,Expense,,$140k,,$105k,,,,,,,,,,$245k,$245k,0
 1,98026,Launch Capability Program (LCP),,,,,Estm,Expense,,$67k,$67k,$67k,$67k,$67k,$67k,$67k,$67k,$67k,$67k,$67k,$67k,$800k,$800k,4
 1,97059,B311 & B321 Gowning Room Modifications,,Execute,,,Estm,Expense,,,,$4k,$8k,$84k,$5k,,,,,,,$100k,$100k,0
-1,N/A,"CRB, travel, ofc supplies, trailer, others ",,,,,Estm,Expense,,$26k,$26k,$26k,$26k,$26k,$26k,$26k,$26k,$26k,$26k,$26k,$26k,$317k,$317k,0
 1,97057,Conference Room 315 Expansion,,Idea,,,Estm,Expense,,,,,,,,,,,,$108k,,$108k,$150k,-42000
-1,,PCS Asset Replacement Depreciation Write-Off,,,,,Estm,Expense,,$67k,$67k,$67k,$67k,$67k,$67k,$67k,$67k,$67k,$67k,$67k,$67k,$800k,$800k,4
-1,,Piping Corrosion,,,,,Estm,Expense,,$224k,$23k,$335k,$355k,$194k,$227k,$271k,$480k,$105k,$166k,$259k,$463k,"$3,102k","$3,102k",0
 0,97999,Site Adjustment,,,,,Estm,Expense,,,,,,,,,,,,,,$k,$k,0
-,,TOTAL Expense Projects,,,,TOTAL,,,,$547k,$208k,$721k,$684k,$555k,$553k,$705k,$862k,$430k,$477k,$834k,$768k,"$7,345k","$7,387k",
-,,Total Capital ,,,,TOTAL,,Capital,,"-$3,548k","$13,820k","$7,790k","$19,107k","$7,892k","$12,485k","$17,213k","$18,058k","$16,326k","$15,159k","$14,759k","$14,293k","$153,355k","$148,516k",
-,,Total Expense,,,,,,Expense,,$649k,$353k,$865k,$857k,$958k,$974k,$932k,"$1,068k",$649k,$590k,"$1,041k",$898k,"$9,835k","$9,758k",
-,,Cashflow Variance ,,,,,,Capital,#DIV/0!,,,,,,,,,,,,, $-   , $-   ,
-,,,,,,,,Expense,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,"862,062.24",,
-,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,10%,12%,9%,10%,10%,10%,8%,7%,7%,6%,6%,5%,,,
-,,,,,,,,,,5%,8%,6%,5%,6%,8%,9%,8%,11%,21%,7%,7%,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,
