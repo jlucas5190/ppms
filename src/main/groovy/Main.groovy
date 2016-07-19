@@ -20,6 +20,7 @@ class Main {
     static Random rand = new Random()
     static String projectFile = System.getProperty("user.dir") +"\\resources\\projects.csv"
     static String resourcesFile = System.getProperty("user.dir") +"\\resources\\resources.csv"
+    static String budgetFile = System.getProperty("user.dir") +"\\resources\\budget.csv"
 
    
     static int max = 100000
