@@ -56,18 +56,20 @@ class Main {
         //parsedData.each {println it}
 
 
-        BudgetExtract budget = new BudgetExtract(budgetFile, sql)
-        def budgetData = budget.parseData()
+        //BudgetExtract budget = new BudgetExtract(budgetFile, sql)
+        //def budgetData = budget.parseData()
         // budgetData.each {println it}
-         budget.insertIntoTable(budgetData)
+       //  budget.insertIntoTable(budgetData)
           
         
-      //  CashflowExtract cashflow = new CashflowExtract(cashflowFile, sql)
-      //  cashflow.parseData()
-       //  cashflow.getCashflowData().each {println it}
-       //  CashflowExtract expenseflow = new CashflowExtract(cashflowFile, sql)
-       // expenseflow.parseData()
-        // expenseflow.getExpenseData().each {println it}
+        CashflowExtract cashflow = new CashflowExtract(cashflowFile, sql)
+        cashflow.parseData()
+        cashflow.getCashflowData().each{println it}
+       
+        cashflow.insertIntoCapitalCashflowTable()
+        cashflow.insertIntoExpenseCashflowTable()
+      
+        
         
         sql.close()
 

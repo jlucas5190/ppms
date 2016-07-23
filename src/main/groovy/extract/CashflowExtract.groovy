@@ -20,33 +20,71 @@ class CashflowExtract extends  Extract{
     def parseData(){
            
                 def projectNo
-                    def creditType
+                def budgetCycle
+                def budgetYear
+                def forecastYear
           for (item in data){         
             
             if(!item.projectNo.isEmpty()){
                    projectNo = getProjectNo(item.projectNo)
-                  creditType = item.creditType}
+              }
               
+                budgetCycle = 4
+                budgetYear = 2
+                forecastYear = 2 
              def type = item.type.toUpperCase()
             if ( type == "CAPITAL"){
             //expense_    
-           this.cashflowData.add( [projectNo: projectNo ,
-                              projectTitle: projectTitle                             
+           this.cashflowData.add( [
+                              projectNo: projectNo ,
+                              budgetCycle: budgetCycle,
+                              budgetYear: budgetYear,
+                              forecastYear: forecastYear,
+                              jan: getItem(item.jan),
+                              feb: getItem(item.feb),
+                              mar: getItem(item.mar),
+                              apr: getItem(item.apr),
+                              may: getItem(item.may),
+                              jun: getItem(item.jun),
+                              jul: getItem(item.jul),
+                              aug: getItem(item.aug),
+                              sep: getItem(item.sep),
+                              oct: getItem(item.oct),
+                              nov: getItem(item.nov),
+                              dec: getItem(item.dec)
                               ])
                           
       
             } else if (type == "EXPENSE") {
-            this.expenseData.add( [projectNo: projectNo ,
-                              projectIndicator: projectTitle                             
+            this.expenseData.add( [
+                              projectNo: projectNo ,
+                              budgetCycle: budgetCycle,
+                              budgetYear: budgetYear,
+                              forecastYear: forecastYear,
+                              jan: getItem(item.jan),
+                              feb: getItem(item.feb),
+                              mar: getItem(item.mar),
+                              apr: getItem(item.apr),
+                              may: getItem(item.may),
+                              jun: getItem(item.jun),
+                              jul: getItem(item.jul),
+                              aug: getItem(item.aug),
+                              sep: getItem(item.sep),
+                              oct: getItem(item.oct),
+                              nov: getItem(item.nov),
+                              dec: getItem(item.dec)
                               ])   
-            }
-    }
-     //setCashflowlist(cashflowList)
-    // setExpenselist(expenseList)
+                    }
+             }
     }
     
-    def getItem(String tmp){
-        return tmp ?: '0.0' 
+    def getItem(String s){
+         s = s.replace(" ", "")
+        s = s. replace(",", "")
+        s = s.replace("-\$","-")
+        s = s.replace("\$", "")     
+         s = s.replace("k", "000")        
+        return   s.isLong() ? s.toLong() : '0' 
     }
  
     def getProjectIndicator(String tmp){
@@ -65,19 +103,23 @@ class CashflowExtract extends  Extract{
                 }
          }
 
+        def insertIntoCapitalCashflowTable(){
+            this.cashflowData.each { item ->
+                def re = sql.executeInsert("INSERT into tblCapitalCashflow (ProjectNo, BudgetCycle, BudgetYear, ForecastYear, jan, feb, mar, apr, may, jun, jul, aug, sep, oct, nov, dec) values (  $item.projectNo , $item.budgetCycle, $item.budgetYear,  $item.forecastYear ,$item.jan, $item.feb, $item.mar, $item.apr, $item.may, $item.jun, $item.jul, $item.aug, $item.sep, $item.oct, $item.nov, $item.dec);")
+                }
+         }
+         
+        def insertIntoExpenseCashflowTable(){
+            this.expenseData.each { item ->
+              def re = sql.executeInsert("INSERT into tblExpenseCashflow (ProjectNo, BudgetCycle, BudgetYear, ForecastYear, jan, feb, mar, apr, may, jun, jul, aug, sep, oct, nov, dec) values (  $item.projectNo , $item.budgetCycle, $item.budgetYear,  $item.forecastYear ,$item.jan, $item.feb, $item.mar, $item.apr, $item.may, $item.jun, $item.jul, $item.aug, $item.sep, $item.oct, $item.nov, $item.dec);")
+                }
+         }
+    
     def deleteAll(){
          return sql.execute( "delete * from tblPortfolio;")
     }
     
-    
-     def setCashflowlist(ArrayList data){
-        this.cashflowData = data
-    }
-    
-     def setExpenselist(ArrayList data){
-        this.expenseData = data
-    }
-
+  
          def getCashflowData(){
         return this.cashflowData
     }
