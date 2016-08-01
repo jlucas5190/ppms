@@ -15,7 +15,6 @@ import groovy.transform.InheritConstructors
 @InheritConstructors
 class CashflowExtract extends  Extract{
     def cashflowData = []
-    def expenseData = []
     
     def parseData(){
            
@@ -40,6 +39,7 @@ class CashflowExtract extends  Extract{
                               budgetCycle: budgetCycle,
                               budgetYear: budgetYear,
                               forecastYear: forecastYear,
+                              expenseType: 1,
                               jan: getItem(item.jan),
                               feb: getItem(item.feb),
                               mar: getItem(item.mar),
@@ -56,11 +56,12 @@ class CashflowExtract extends  Extract{
                           
       
             } else if (type == "EXPENSE") {
-            this.expenseData.add( [
+            this.cashflowData.add( [
                               projectNo: projectNo ,
                               budgetCycle: budgetCycle,
                               budgetYear: budgetYear,
                               forecastYear: forecastYear,
+                              expenseType: 2,
                               jan: getItem(item.jan),
                               feb: getItem(item.feb),
                               mar: getItem(item.mar),
@@ -98,22 +99,11 @@ class CashflowExtract extends  Extract{
     }
     
     def insertIntoTable(ArrayList items){
-         items.each { item ->
-              def re = sql.executeInsert("INSERT into tblResource (ProjectNo, ProjectIndicator, ProgramType, ResourceType, BudgetYear, BudgetCycle, jan, feb, mar, apr, may, jun, jul, aug, sep, oct, nov, dec) values (  $item.projectNo , $item.projectIndicator, $item.program , $item.resourceType, $item.budgetYear, $item.budgetCycle, $item.jan, $item.feb, $item.mar, $item.apr, $item.may, $item.jun, $item.jul, $item.aug, $item.sep, $item.oct, $item.nov, $item.dec);")
+                    this.cashflowData.each { item ->
+                def re = sql.executeInsert("INSERT into tblCashflow (ProjectNo, BudgetCycle, BudgetYear, ForecastYear, ExpenseType, jan, feb, mar, apr, may, jun, jul, aug, sep, oct, nov, dec) values (  $item.projectNo , $item.budgetCycle, $item.budgetYear,  $item.forecastYear , $item.expenseType ,$item.jan, $item.feb, $item.mar, $item.apr, $item.may, $item.jun, $item.jul, $item.aug, $item.sep, $item.oct, $item.nov, $item.dec);")
                 }
          }
 
-        def insertIntoCapitalCashflowTable(){
-            this.cashflowData.each { item ->
-                def re = sql.executeInsert("INSERT into tblCapitalCashflow (ProjectNo, BudgetCycle, BudgetYear, ForecastYear, jan, feb, mar, apr, may, jun, jul, aug, sep, oct, nov, dec) values (  $item.projectNo , $item.budgetCycle, $item.budgetYear,  $item.forecastYear ,$item.jan, $item.feb, $item.mar, $item.apr, $item.may, $item.jun, $item.jul, $item.aug, $item.sep, $item.oct, $item.nov, $item.dec);")
-                }
-         }
-         
-        def insertIntoExpenseCashflowTable(){
-            this.expenseData.each { item ->
-              def re = sql.executeInsert("INSERT into tblExpenseCashflow (ProjectNo, BudgetCycle, BudgetYear, ForecastYear, jan, feb, mar, apr, may, jun, jul, aug, sep, oct, nov, dec) values (  $item.projectNo , $item.budgetCycle, $item.budgetYear,  $item.forecastYear ,$item.jan, $item.feb, $item.mar, $item.apr, $item.may, $item.jun, $item.jul, $item.aug, $item.sep, $item.oct, $item.nov, $item.dec);")
-                }
-         }
     
     def deleteAll(){
          return sql.execute( "delete * from tblPortfolio;")
