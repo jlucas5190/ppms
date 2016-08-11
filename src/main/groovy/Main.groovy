@@ -48,18 +48,21 @@ class Main {
             return;
         }*/
           
-       // ProjectExtract project =  new ProjectExtract(projectFile, sql)
-          //ResourceExtract resource = new ResourceExtract(resourcesFile, sql)
-          //def parsedData = resource.parseData()
-         //   project.deleteAll()
-     //    
-        //parsedData.each {println it}
+        ProjectExtract project =  new ProjectExtract(projectFile, sql)
+        def projectData = project.parseData()
+      //  project.insertIntoTable(projectData)
+        projectData.each {println it}
+
+        ResourceExtract resource = new ResourceExtract(resourcesFile, sql)
+        def resourceData = resource.parseData()
+        resource.insertIntoTable(resourceData)
+         resourceData.each {println it}
 
 
-        //BudgetExtract budget = new BudgetExtract(budgetFile, sql)
-        //def budgetData = budget.parseData()
-        // budgetData.each {println it}
-       //  budget.insertIntoTable(budgetData)
+        BudgetExtract budget = new BudgetExtract(budgetFile, sql)
+        def budgetData = budget.parseData()
+        budgetData.each {println it}
+        budget.insertIntoTable(budgetData)
           
         
         CashflowExtract cashflow = new CashflowExtract(cashflowFile, sql)
