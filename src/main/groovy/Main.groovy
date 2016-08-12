@@ -48,7 +48,7 @@ class Main {
             return;
         }*/
           
-        ProjectExtract project =  new ProjectExtract(projectFile, sql)
+       /* ProjectExtract project =  new ProjectExtract(projectFile, sql)
         def projectData = project.parseData()
       //  project.insertIntoTable(projectData)
         projectData.each {println it}
@@ -62,7 +62,7 @@ class Main {
         BudgetExtract budget = new BudgetExtract(budgetFile, sql)
         def budgetData = budget.parseData()
         budgetData.each {println it}
-        budget.insertIntoTable(budgetData)
+        budget.insertIntoTable(budgetData)*/
           
         
         CashflowExtract cashflow = new CashflowExtract(cashflowFile, sql)
