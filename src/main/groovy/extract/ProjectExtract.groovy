@@ -21,6 +21,7 @@ class ProjectExtract extends  Extract{
        
          def projectList = []
                 for(item in data){
+                    if(item.projectNo){
             projectList.add( [projectNo: item.projectNo ,
                               projectTitle:item.projectTitle,
                               businessCase: item.businessCase,
@@ -30,7 +31,7 @@ class ProjectExtract extends  Extract{
                                 globalType: getGlobalType(item.globalType),
                                 SPPM: getSPPM(item.SPPM),
                               SME: getSME(item.SME)
-                            ])
+                            ])}
         }
      return projectList      
     }

@@ -19,7 +19,7 @@ class Main {
     static String driver = "net.ucanaccess.jdbc.UcanaccessDriver"
     static Random rand = new Random()
     static String projectFile = System.getProperty("user.dir") +"\\resources\\projects.csv"
-    static String resourcesFile = System.getProperty("user.dir") +"\\resources\\resources.csv"
+    static String resourcesFile = System.getProperty("user.dir") +"\\resources\\resources_2016.csv"
     static String budgetFile = System.getProperty("user.dir") +"\\resources\\budget.csv"
         static String cashflowFile = System.getProperty("user.dir") +"\\resources\\cashflow.csv"
 
@@ -48,28 +48,28 @@ class Main {
             return;
         }*/
           
-       /* ProjectExtract project =  new ProjectExtract(projectFile, sql)
-        def projectData = project.parseData()
-      //  project.insertIntoTable(projectData)
-        projectData.each {println it}
+       // ProjectExtract project =  new ProjectExtract(projectFile, sql)
+      //  def projectData = project.parseData()
+       // project.insertIntoTable(projectData)
+      //  projectData.each {println it}
 
-        ResourceExtract resource = new ResourceExtract(resourcesFile, sql)
+       ResourceExtract resource = new ResourceExtract(resourcesFile, sql)
         def resourceData = resource.parseData()
-        resource.insertIntoTable(resourceData)
+      // resource.insertIntoTable(resourceData)
          resourceData.each {println it}
 
 
-        BudgetExtract budget = new BudgetExtract(budgetFile, sql)
+      /*  BudgetExtract budget = new BudgetExtract(budgetFile, sql)
         def budgetData = budget.parseData()
         budgetData.each {println it}
         budget.insertIntoTable(budgetData)*/
           
         
-        CashflowExtract cashflow = new CashflowExtract(cashflowFile, sql)
-        cashflow.parseData()
-        cashflow.getCashflowData().each{println it}
+      //  CashflowExtract cashflow = new CashflowExtract(cashflowFile, sql)
+      //  cashflow.parseData()
+      //  cashflow.getCashflowData().each{println it}
        
-        cashflow.insertIntoTable([])
+       // cashflow.insertIntoTable([])
        
         
         
