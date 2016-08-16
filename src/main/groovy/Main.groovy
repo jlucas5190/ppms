@@ -22,6 +22,8 @@ class Main {
     static String resourcesFile = System.getProperty("user.dir") +"\\resources\\resources_2016.csv"
     static String budgetFile = System.getProperty("user.dir") +"\\resources\\budget2016.csv"
         static String cashflowFile = System.getProperty("user.dir") +"\\resources\\cashflow.csv"
+          static String cashflowFile2016 = System.getProperty("user.dir") +"\\resources\\cashflow2016.csv"
+              static String cashflowFile2017 = System.getProperty("user.dir") +"\\resources\\cashflow2017.csv"
 
    
     static int max = 100000
@@ -65,11 +67,19 @@ class Main {
         //budget.insertIntoTable(budgetData)
           
         
-      //  CashflowExtract cashflow = new CashflowExtract(cashflowFile, sql)
-      //  cashflow.parseData()
-      //  cashflow.getCashflowData().each{println it}
+        CashflowExtract cashflow2016 = new CashflowExtract(cashflowFile2016, sql)
+       def data1 = cashflow2016.parseData(2,2,"2016" )
+        cashflow2016.getCashflowData().each{println it}
+              cashflow2016.insertIntoTable( data1)
+        CashflowExtract cashflow2017_1 = new CashflowExtract(cashflowFile2017, sql)
+       def data2 =cashflow2017_1.parseData(2,3,"2017" )
+        cashflow2017_1.getCashflowData().each{println it}
+           cashflow2017_1.insertIntoTable( data2)
+            CashflowExtract cashflow2017_2 = new CashflowExtract(cashflowFile2017, sql)
+      def data3 = cashflow2017_2.parseData(2,1,"2015" )
+        cashflow2017_2.getCashflowData().each{println it}
        
-       // cashflow.insertIntoTable([])
+        cashflow2017_2.insertIntoTable( data3)
        
         
         

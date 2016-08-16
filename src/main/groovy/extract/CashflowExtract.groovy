@@ -16,67 +16,72 @@ import groovy.transform.InheritConstructors
 class CashflowExtract extends  Extract{
     def cashflowData = []
     
-    def parseData(budgetYear){
+    def parseData(budgetYear, forecastYear, key){
            
                 def projectNo
                 def budgetCycle
-               // def budgetYear
-                def forecastYear
+                def projectNoText
+              //  def budgetYear
+                //def forecastYear
           for (item in data){         
             
             if(!item.projectNo.isEmpty()){
                    projectNo = getProjectNo(item.projectNo)
+                    projectNoText = item.projectNo
               }
               
                 budgetCycle = 4
                 budgetYear = budgetYear
-                forecastYear = 2 
+                forecastYear = forecastYear
              def type = item.type.toUpperCase()
             if ( type == "CAPITAL"){
             //expense_    
            this.cashflowData.add( [
                               projectNo: projectNo ,
+                              projectNoText: projectNoText ,
                               budgetCycle: budgetCycle,
                               budgetYear: budgetYear,
                               forecastYear: forecastYear,
                               expenseType: 1,
-                              jan: getItem(item.jan),
-                              feb: getItem(item.feb),
-                              mar: getItem(item.mar),
-                              apr: getItem(item.apr),
-                              may: getItem(item.may),
-                              jun: getItem(item.jun),
-                              jul: getItem(item.jul),
-                              aug: getItem(item.aug),
-                              sep: getItem(item.sep),
-                              oct: getItem(item.oct),
-                              nov: getItem(item.nov),
-                              dec: getItem(item.dec)
+                              jan: getItem(item[key+ "-jan"]),
+                              feb: getItem(item[key+ "-feb"]),
+                              mar: getItem(item[key+ "-mar"]),
+                              apr: getItem(item[key+ "-apr"]),
+                              may: getItem(item[key+ "-may"]),
+                              jun: getItem(item[key+ "-jun"]),
+                              jul: getItem(item[key+ "-jul"]),
+                              aug: getItem(item[key+ "-aug"]),
+                              sep: getItem(item[key+ "-sep"]),
+                              oct: getItem(item[key+ "-oct"]),
+                              nov: getItem(item[key+ "-nov"]),
+                              dec: getItem(item[key+ "-dec"])
                               ])
                           
       
             } else if (type == "EXPENSE") {
             this.cashflowData.add( [
                               projectNo: projectNo ,
-                              budgetCycle: budgetCycle,
+                              projectNoText: projectNoText ,
+                               budgetCycle: budgetCycle,
                               budgetYear: budgetYear,
                               forecastYear: forecastYear,
                               expenseType: 2,
-                              jan: getItem(item.jan),
-                              feb: getItem(item.feb),
-                              mar: getItem(item.mar),
-                              apr: getItem(item.apr),
-                              may: getItem(item.may),
-                              jun: getItem(item.jun),
-                              jul: getItem(item.jul),
-                              aug: getItem(item.aug),
-                              sep: getItem(item.sep),
-                              oct: getItem(item.oct),
-                              nov: getItem(item.nov),
-                              dec: getItem(item.dec)
+                              jan: getItem(item[key+ "-jan"]),
+                              feb: getItem(item[key+ "-feb"]),
+                              mar: getItem(item[key+ "-mar"]),
+                              apr: getItem(item[key+ "-apr"]),
+                              may: getItem(item[key+ "-may"]),
+                              jun: getItem(item[key+ "-jun"]),
+                              jul: getItem(item[key+ "-jul"]),
+                              aug: getItem(item[key+ "-aug"]),
+                              sep: getItem(item[key+ "-sep"]),
+                              oct: getItem(item[key+ "-oct"]),
+                              nov: getItem(item[key+ "-nov"]),
+                              dec: getItem(item[key+ "-dec"])
                               ])   
                     }
              }
+             return this.cashflowData;
     }
     
     def getItem(String s){
@@ -99,8 +104,8 @@ class CashflowExtract extends  Extract{
     }
     
     def insertIntoTable(ArrayList items){
-                    this.cashflowData.each { item ->
-                def re = sql.executeInsert("INSERT into tblCashflow (ProjectNo, BudgetCycle, BudgetYear, ForecastYear, ExpenseType, jan, feb, mar, apr, may, jun, jul, aug, sep, oct, nov, dec) values (  $item.projectNo , $item.budgetCycle, $item.budgetYear,  $item.forecastYear , $item.expenseType ,$item.jan, $item.feb, $item.mar, $item.apr, $item.may, $item.jun, $item.jul, $item.aug, $item.sep, $item.oct, $item.nov, $item.dec);")
+                 items.each { item ->
+                def re = sql.executeInsert("INSERT into tblCashflow (ProjectNo, ProjectNoText, BudgetCycle, BudgetYear, ForecastYear, ExpenseType, jan, feb, mar, apr, may, jun, jul, aug, sep, oct, nov, dec) values (  $item.projectNo , $item.projectNoText ,$item.budgetCycle, $item.budgetYear,  $item.forecastYear , $item.expenseType ,$item.jan, $item.feb, $item.mar, $item.apr, $item.may, $item.jun, $item.jul, $item.aug, $item.sep, $item.oct, $item.nov, $item.dec);")
                 }
          }
 
