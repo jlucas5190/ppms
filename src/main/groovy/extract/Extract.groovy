@@ -15,7 +15,7 @@ abstract class Extract {
          BufferedReader bufferReader = new BufferedReader(new FileReader(csvFile))         
        this.data = CsvParser.parseCsv(bufferReader)        
          }
-   abstract parseData()
+   //abstract parseData()
    abstract insertIntoTable(ArrayList items)
     def removeSpecialCharacters(String s){
         s = s.replace("[ ](?=[ ])|[^-_,A-Za-z0-9 ]+", "");

@@ -16,11 +16,11 @@ import groovy.transform.InheritConstructors
 class CashflowExtract extends  Extract{
     def cashflowData = []
     
-    def parseData(){
+    def parseData(budgetYear){
            
                 def projectNo
                 def budgetCycle
-                def budgetYear
+               // def budgetYear
                 def forecastYear
           for (item in data){         
             
@@ -29,7 +29,7 @@ class CashflowExtract extends  Extract{
               }
               
                 budgetCycle = 4
-                budgetYear = 2
+                budgetYear = budgetYear
                 forecastYear = 2 
              def type = item.type.toUpperCase()
             if ( type == "CAPITAL"){

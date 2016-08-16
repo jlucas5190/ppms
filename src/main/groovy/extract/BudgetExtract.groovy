@@ -21,9 +21,11 @@ class BudgetExtract extends  Extract{
           for (item in data){
             if(!item.projectNo.isEmpty()){
                   def projectNo = getProjectNo(item.projectNo)
+                  def projectNoText = item.projectNo
 
           //CURR
            budgetList.add( [projectNo: projectNo ,
+                            projectNoText: projectNoText,
                              budgetCycle:  4, //CURR
                               budgetYear : 2, //2016
                              forecastYear: 2 , //2016  
@@ -32,6 +34,7 @@ class BudgetExtract extends  Extract{
                               ])
                           
             budgetList.add( [projectNo: projectNo ,
+                             projectNoText: projectNoText,
                              budgetCycle:  4, //CURR
                               budgetYear : 2, //2016
                              forecastYear: 3 , //2017  
@@ -40,6 +43,7 @@ class BudgetExtract extends  Extract{
                               ])
              
              budgetList.add( [projectNo: projectNo ,
+                              projectNoText: projectNoText,
                              budgetCycle:  4, //CURR
                               budgetYear : 2, //2016
                              forecastYear: 4 , //2019  
@@ -48,6 +52,7 @@ class BudgetExtract extends  Extract{
                               ])     
                           
               budgetList.add( [projectNo: projectNo ,
+                               projectNoText: projectNoText,
                              budgetCycle:  4, //CURR
                               budgetYear : 2, //2016
                              forecastYear: 5 , //2019  
@@ -56,6 +61,7 @@ class BudgetExtract extends  Extract{
                               ])     
                           
               budgetList.add( [projectNo: projectNo ,
+                               projectNoText: projectNoText,
                              budgetCycle:  4, //CURR
                               budgetYear : 2, //2016
                              forecastYear: 6 , //2020  
@@ -63,6 +69,7 @@ class BudgetExtract extends  Extract{
                               expense: getItem(item.curr_2020_expense)
                               ])     
               budgetList.add( [projectNo: projectNo ,
+                               projectNoText: projectNoText,
                              budgetCycle:  4, //CURR
                               budgetYear : 2, //2016
                              forecastYear: 7 , //2021  
@@ -71,6 +78,7 @@ class BudgetExtract extends  Extract{
                               ])   
                 
                budgetList.add( [projectNo: projectNo ,
+                                projectNoText: projectNoText,
                              budgetCycle:  4, //CURR
                               budgetYear : 2, //2016
                              forecastYear: 8 , //2022  
@@ -80,6 +88,7 @@ class BudgetExtract extends  Extract{
                           
                  //t0
            budgetList.add( [projectNo: projectNo ,
+                            projectNoText: projectNoText,
                              budgetCycle:  1, //t0
                               budgetYear : 2, //2016
                              forecastYear: 2 , //2016  
@@ -88,6 +97,7 @@ class BudgetExtract extends  Extract{
                               ])
                           
             budgetList.add( [projectNo: projectNo ,
+                             projectNoText: projectNoText,
                              budgetCycle:  1, //t0
                               budgetYear : 2, //2016
                              forecastYear: 3 , //2017  
@@ -96,14 +106,16 @@ class BudgetExtract extends  Extract{
                               ])
              
              budgetList.add( [projectNo: projectNo ,
+                              projectNoText: projectNoText,
                              budgetCycle:  1, //t0
                               budgetYear : 2, //2016
-                             forecastYear: 4 , //2019  
+                             forecastYear: 4 , //2018
                              capital: getItem(item.t0_2018_capital) ,
                               expense: getItem(item.t0_2018_expense)
                               ])     
                           
               budgetList.add( [projectNo: projectNo ,
+                               projectNoText: projectNoText,
                              budgetCycle:  1, //t0
                               budgetYear : 2, //2016
                              forecastYear: 5 , //2019  
@@ -112,6 +124,7 @@ class BudgetExtract extends  Extract{
                               ])     
                           
               budgetList.add( [projectNo: projectNo ,
+                               projectNoText: projectNoText,
                              budgetCycle:  1, //t0
                               budgetYear : 2, //2016
                              forecastYear: 6 , //2020  
@@ -119,6 +132,7 @@ class BudgetExtract extends  Extract{
                               expense: getItem(item.t0_2020_expense)
                               ])     
               budgetList.add( [projectNo: projectNo ,
+                               projectNoText: projectNoText,
                              budgetCycle:  1, //t0
                               budgetYear : 2, //2016
                              forecastYear: 7 , //2021  
@@ -127,6 +141,7 @@ class BudgetExtract extends  Extract{
                               ])   
             //m05
            budgetList.add( [projectNo: projectNo ,
+                            projectNoText: projectNoText,
                              budgetCycle:  2, //m05
                               budgetYear : 2, //2016
                              forecastYear: 2 , //2016  
@@ -135,6 +150,7 @@ class BudgetExtract extends  Extract{
                               ])
                           
             budgetList.add( [projectNo: projectNo ,
+                             projectNoText: projectNoText,
                              budgetCycle:  2, //m05
                               budgetYear : 2, //2016
                              forecastYear: 3 , //2017  
@@ -143,14 +159,16 @@ class BudgetExtract extends  Extract{
                               ])
              
              budgetList.add( [projectNo: projectNo ,
+                              projectNoText: projectNoText,
                              budgetCycle:  2, //m05
                               budgetYear : 2, //2016
-                             forecastYear: 4 , //2019  
+                             forecastYear: 4 , //2018
                              capital: getItem(item.m05_2018_capital) ,
                               expense: getItem(item.m05_2018_expense)
                               ])     
                           
               budgetList.add( [projectNo: projectNo ,
+                               projectNoText: projectNoText,
                              budgetCycle:  2, //m05
                               budgetYear : 2, //2016
                              forecastYear: 5 , //2019  
@@ -159,6 +177,7 @@ class BudgetExtract extends  Extract{
                               ])     
                           
               budgetList.add( [projectNo: projectNo ,
+                               projectNoText: projectNoText,
                              budgetCycle:  2, //m05
                               budgetYear : 2, //2016
                              forecastYear: 6 , //2020  
@@ -166,6 +185,7 @@ class BudgetExtract extends  Extract{
                               expense: getItem(item.m05_2020_expense)
                               ])     
               budgetList.add( [projectNo: projectNo ,
+                               projectNoText: projectNoText,
                              budgetCycle:  2, //m05
                               budgetYear : 2, //2016
                              forecastYear: 7 , //2021  
@@ -175,6 +195,7 @@ class BudgetExtract extends  Extract{
                           
                   //t3
 		budgetList.add( [projectNo: projectNo ,
+                         projectNoText: projectNoText,
                              budgetCycle:  3, //t3
                               budgetYear : 1, //2015
                              forecastYear: 1 , //2015  
@@ -183,6 +204,7 @@ class BudgetExtract extends  Extract{
                               ])   
 							  
            budgetList.add( [projectNo: projectNo ,
+                            projectNoText: projectNoText,
                              budgetCycle:  3, //t3
                               budgetYear : 1, //2015
                              forecastYear: 2 , //2016  
@@ -191,6 +213,7 @@ class BudgetExtract extends  Extract{
                               ])
                           
             budgetList.add( [projectNo: projectNo ,
+                             projectNoText: projectNoText,
                              budgetCycle:  3, //t3
                               budgetYear : 1, //2015
                              forecastYear: 3 , //2017  
@@ -199,6 +222,7 @@ class BudgetExtract extends  Extract{
                               ])
              
              budgetList.add( [projectNo: projectNo ,
+                              projectNoText: projectNoText,
                              budgetCycle:  3, //t3
                               budgetYear : 1, //2015
                              forecastYear: 4 , //2018  
@@ -207,6 +231,7 @@ class BudgetExtract extends  Extract{
                               ])     
                           
               budgetList.add( [projectNo: projectNo ,
+                               projectNoText: projectNoText,
                              budgetCycle:  3, //t3
                               budgetYear : 1, //2015
                              forecastYear: 5 , //2019  
@@ -215,6 +240,7 @@ class BudgetExtract extends  Extract{
                               ])     
                           
               budgetList.add( [projectNo: projectNo ,
+                               projectNoText: projectNoText,
                              budgetCycle:  3, //t3
                               budgetYear : 1, //2015
                              forecastYear: 6 , //2020  
@@ -223,6 +249,7 @@ class BudgetExtract extends  Extract{
                               ])   
                         //t0_2015
            budgetList.add( [projectNo: projectNo ,
+                            projectNoText: projectNoText,
                              budgetCycle:  1, //t0
                               budgetYear : 1, //2015
                              forecastYear: 2 , //2016  
@@ -231,6 +258,7 @@ class BudgetExtract extends  Extract{
                               ])
                           
             budgetList.add( [projectNo: projectNo ,
+                             projectNoText: projectNoText,
                              budgetCycle:  1, //t0
                               budgetYear : 1, //2015
                              forecastYear: 3 , //2017  
@@ -239,6 +267,7 @@ class BudgetExtract extends  Extract{
                               ])
              
              budgetList.add( [projectNo: projectNo ,
+                              projectNoText: projectNoText,
                              budgetCycle:  1, //t0
                               budgetYear : 1, //2015
                              forecastYear: 4 , //2018  
@@ -247,6 +276,7 @@ class BudgetExtract extends  Extract{
                               ])     
                           
               budgetList.add( [projectNo: projectNo ,
+                               projectNoText: projectNoText,
                              budgetCycle:  1, //t0
                               budgetYear : 1, //2015
                              forecastYear: 5 , //2019  
@@ -255,6 +285,7 @@ class BudgetExtract extends  Extract{
                               ])     
                           
               budgetList.add( [projectNo: projectNo ,
+                               projectNoText: projectNoText,
                              budgetCycle:  1, //t0
                               budgetYear : 1, //2015
                              forecastYear: 6 , //2020  
@@ -262,6 +293,7 @@ class BudgetExtract extends  Extract{
                               expense: getItem(item.t0_2020_expense_2015)
                               ])     
               budgetList.add( [projectNo: projectNo ,
+                               projectNoText: projectNoText,
                              budgetCycle:  1, //t0
                               budgetYear : 1, //2015
                              forecastYear: 7 , //2021  
@@ -291,7 +323,7 @@ class BudgetExtract extends  Extract{
     
     def insertIntoTable(ArrayList items){
          items.each { item ->
-              def re = sql.executeInsert("INSERT into tblBudget (ProjectNo, BudgetCycle, BudgetYear, ForecastYear, Capital, Expense) values (  $item.projectNo , $item.budgetCycle, $item.budgetYear , $item.forecastYear, $item.capital, $item.expense);")
+              def re = sql.executeInsert("INSERT into tblBudget (ProjectNo, ProjectNoText, BudgetCycle, BudgetYear, ForecastYear, Capital, Expense) values (  $item.projectNo , $item.projectNoText ,$item.budgetCycle, $item.budgetYear , $item.forecastYear, $item.capital, $item.expense);")
                 }
          }
 
