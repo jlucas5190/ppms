@@ -4,3 +4,10 @@
 •Project # on  Budget Table
 •Cash Flow Report
 •Add Expense Portion of Capital Project  ( Above Line)
+
+For 8/17: Joshua
+–Global Bucket report (Projects # 6DM & 90024)
+–Upload T3 cashflow 2016, 2017
+–Reload Resource Data
+–Resize field for Resource Report
+–Add Project Name to Resource Report
