@@ -24,7 +24,7 @@ class ProjectExtract extends  Extract{
                     if(item.projectNo){
             projectList.add( [projectNo: item.projectNo ,
                               projectTitle:item.projectTitle,
-                              businessCase: item.businessCase,
+                              businessCase: removeSpecialCharacters( item.businessCase),
                                 CAPrefix: item.prefix,
                               businessDriver: getBuisnessDriver(item.businessDriver),
                               deprecCC: getDeprecCC(item.deprecCC),

@@ -19,7 +19,7 @@ abstract class Extract {
    abstract insertIntoTable(ArrayList items)
     def removeSpecialCharacters(String s){
         s = s.replace("[ ](?=[ ])|[^-_,A-Za-z0-9 ]+", "");
-        s = s.replace(" ", "")
+       s = s.replace(" ", "")
         s = s. replace(",", "")
         s = s.replace("\$", "")       
         s = s.replace("(", "-")   

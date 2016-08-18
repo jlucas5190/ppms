@@ -50,10 +50,10 @@ class Main {
             return;
         }*/
           
-       /*ProjectExtract project =  new ProjectExtract(projectFile, sql)
+       ProjectExtract project =  new ProjectExtract(projectFile, sql)
         def projectData = project.parseData()
-        project.insertIntoTable(projectData)
-        projectData.each {println it}*/
+       project.insertIntoTable(projectData)
+        projectData.each {println it}/**/
 
        //ResourceExtract resource = new ResourceExtract(resourcesFile, sql)
         //def resourceData = resource.parseData(3,2,"17")
@@ -67,7 +67,7 @@ class Main {
        // budget.insertIntoTable(budgetData)
           
         
-       CashflowExtract cashflow2016 = new CashflowExtract(cashflowFile2016, sql)
+       /*CashflowExtract cashflow2016 = new CashflowExtract(cashflowFile2016, sql)
        def cashFlowdata = []
         cashFlowdata.addAll(cashflow2016.parseData(2,2,"16" ))
 
@@ -101,7 +101,7 @@ class Main {
         cashFlowdata.addAll(cashflow2017_4.parseData(3,6,"20" ))
 
         cashflow2017_4.insertIntoTable(cashFlowdata)
-        cashFlowdata.each{println it}
+        cashFlowdata.each{println it}*/
 
 
 
