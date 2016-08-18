@@ -20,10 +20,10 @@ class Main {
     static Random rand = new Random()
     static String projectFile = System.getProperty("user.dir") +"\\resources\\projects.csv"
     static String resourcesFile = System.getProperty("user.dir") +"\\resources\\resources_2016.csv"
-    static String budgetFile = System.getProperty("user.dir") +"\\resources\\budget2016.csv"
+    static String budgetFile = System.getProperty("user.dir") +"\\resources\\budget.csv"
         static String cashflowFile = System.getProperty("user.dir") +"\\resources\\cashflow.csv"
-          static String cashflowFile2016 = System.getProperty("user.dir") +"\\resources\\cashflow2016.csv"
-              static String cashflowFile2017 = System.getProperty("user.dir") +"\\resources\\cashflow2017.csv"
+          static String cashflowFile2016 = System.getProperty("user.dir") +"\\resources\\t3Cashflow2016.csv"
+              static String cashflowFile2017 = System.getProperty("user.dir") +"\\resources\\t3Cashflow2017.csv"
 
    
     static int max = 100000
@@ -50,28 +50,63 @@ class Main {
             return;
         }*/
           
-       // ProjectExtract project =  new ProjectExtract(projectFile, sql)
-      //  def projectData = project.parseData()
-       // project.insertIntoTable(projectData)
-      //  projectData.each {println it}
+       /*ProjectExtract project =  new ProjectExtract(projectFile, sql)
+        def projectData = project.parseData()
+        project.insertIntoTable(projectData)
+        projectData.each {println it}*/
 
        //ResourceExtract resource = new ResourceExtract(resourcesFile, sql)
-       // def resourceData = resource.parseData()
-      // resource.insertIntoTable(resourceData)
-       //  resourceData.each {println it}
+        //def resourceData = resource.parseData(3,2,"17")
+         //resource.insertIntoTable(resourceData)
+         //resourceData.each {println it}
 
 
        //BudgetExtract budget = new BudgetExtract(budgetFile, sql)
-       // def budgetData = budget.parseData()
+       //def budgetData = budget.parseData()
         //budgetData.each {println it}
-        //budget.insertIntoTable(budgetData)
+       // budget.insertIntoTable(budgetData)
           
         
-        CashflowExtract cashflow2016 = new CashflowExtract(cashflowFile2016, sql)
-       def data1 = cashflow2016.parseData(2,2,"2016" )
-        cashflow2016.getCashflowData().each{println it}
-              cashflow2016.insertIntoTable( data1)
-        CashflowExtract cashflow2017_1 = new CashflowExtract(cashflowFile2017, sql)
+       CashflowExtract cashflow2016 = new CashflowExtract(cashflowFile2016, sql)
+       def cashFlowdata = []
+        cashFlowdata.addAll(cashflow2016.parseData(2,2,"16" ))
+
+
+        CashflowExtract cashflow2 = new CashflowExtract(cashflowFile2016, sql)
+        cashFlowdata.addAll(cashflow2.parseData(2,3,"17" ))
+
+
+        CashflowExtract cashflow3 = new CashflowExtract(cashflowFile2016, sql)
+        cashFlowdata.addAll(cashflow3.parseData(2,4,"18" ))
+
+        CashflowExtract cashflow4 = new CashflowExtract(cashflowFile2016, sql)
+       cashFlowdata.addAll(cashflow4.parseData(2,5,"19" ))
+
+        CashflowExtract cashflow5 = new CashflowExtract(cashflowFile2016, sql)
+       cashFlowdata.addAll(cashflow5.parseData(2,6,"20" ))
+
+
+        CashflowExtract cashflow2017 = new CashflowExtract(cashflowFile2017, sql)
+        cashFlowdata.addAll(cashflow2017.parseData(3,3,"17" ))
+
+
+        CashflowExtract cashflow2017_2 = new CashflowExtract(cashflowFile2017, sql)
+        cashFlowdata.addAll(cashflow2017_2.parseData(3,4,"18" ))
+
+
+        CashflowExtract cashflow2017_3 = new CashflowExtract(cashflowFile2017, sql)
+        cashFlowdata.addAll(cashflow2017_3.parseData(3,5,"19" ))
+
+        CashflowExtract cashflow2017_4 = new CashflowExtract(cashflowFile2017, sql)
+        cashFlowdata.addAll(cashflow2017_4.parseData(3,6,"20" ))
+
+        cashflow2017_4.insertIntoTable(cashFlowdata)
+        cashFlowdata.each{println it}
+
+
+
+        // cashflow2016.insertIntoTable( data1)
+      /*  CashflowExtract cashflow2017_1 = new CashflowExtract(cashflowFile2017, sql)
        def data2 =cashflow2017_1.parseData(2,3,"2017" )
         cashflow2017_1.getCashflowData().each{println it}
            cashflow2017_1.insertIntoTable( data2)
@@ -79,7 +114,7 @@ class Main {
       def data3 = cashflow2017_2.parseData(2,1,"2015" )
         cashflow2017_2.getCashflowData().each{println it}
        
-        cashflow2017_2.insertIntoTable( data3)
+        cashflow2017_2.insertIntoTable( data3) */
        
         
         

@@ -30,11 +30,11 @@ class CashflowExtract extends  Extract{
                     projectNoText = item.projectNo
               }
               
-                budgetCycle = 4
+                budgetCycle = 3
                 budgetYear = budgetYear
                 forecastYear = forecastYear
              def type = item.type.toUpperCase()
-            if ( type == "CAPITAL"){
+            if ( type == "C"){
             //expense_    
            this.cashflowData.add( [
                               projectNo: projectNo ,
@@ -43,22 +43,22 @@ class CashflowExtract extends  Extract{
                               budgetYear: budgetYear,
                               forecastYear: forecastYear,
                               expenseType: 1,
-                              jan: getItem(item[key+ "-jan"]),
-                              feb: getItem(item[key+ "-feb"]),
-                              mar: getItem(item[key+ "-mar"]),
-                              apr: getItem(item[key+ "-apr"]),
-                              may: getItem(item[key+ "-may"]),
-                              jun: getItem(item[key+ "-jun"]),
-                              jul: getItem(item[key+ "-jul"]),
-                              aug: getItem(item[key+ "-aug"]),
-                              sep: getItem(item[key+ "-sep"]),
-                              oct: getItem(item[key+ "-oct"]),
-                              nov: getItem(item[key+ "-nov"]),
-                              dec: getItem(item[key+ "-dec"])
+                              jan: getItem(item[key+ "-Jan"]),
+                              feb: getItem(item[key+ "-Feb"]),
+                              mar: getItem(item[key+ "-Mar"]),
+                              apr: getItem(item[key+ "-Apr"]),
+                              may: getItem(item[key+ "-May"]),
+                              jun: getItem(item[key+ "-Jun"]),
+                              jul: getItem(item[key+ "-Jul"]),
+                              aug: getItem(item[key+ "-Aug"]),
+                              sep: getItem(item[key+ "-Sep"]),
+                              oct: getItem(item[key+ "-Oct"]),
+                              nov: getItem(item[key+ "-Nov"]),
+                              dec: getItem(item[key+ "-Dec"])
                               ])
                           
       
-            } else if (type == "EXPENSE") {
+            } else if (type == "E") {
             this.cashflowData.add( [
                               projectNo: projectNo ,
                               projectNoText: projectNoText ,
@@ -66,18 +66,18 @@ class CashflowExtract extends  Extract{
                               budgetYear: budgetYear,
                               forecastYear: forecastYear,
                               expenseType: 2,
-                              jan: getItem(item[key+ "-jan"]),
-                              feb: getItem(item[key+ "-feb"]),
-                              mar: getItem(item[key+ "-mar"]),
-                              apr: getItem(item[key+ "-apr"]),
-                              may: getItem(item[key+ "-may"]),
-                              jun: getItem(item[key+ "-jun"]),
-                              jul: getItem(item[key+ "-jul"]),
-                              aug: getItem(item[key+ "-aug"]),
-                              sep: getItem(item[key+ "-sep"]),
-                              oct: getItem(item[key+ "-oct"]),
-                              nov: getItem(item[key+ "-nov"]),
-                              dec: getItem(item[key+ "-dec"])
+                              jan: getItem(item[key+ "-Jan"]),
+                              feb: getItem(item[key+ "-Feb"]),
+                              mar: getItem(item[key+ "-Mar"]),
+                              apr: getItem(item[key+ "-Apr"]),
+                              may: getItem(item[key+ "-May"]),
+                              jun: getItem(item[key+ "-Jun"]),
+                              jul: getItem(item[key+ "-Jul"]),
+                              aug: getItem(item[key+ "-Aug"]),
+                              sep: getItem(item[key+ "-Sep"]),
+                              oct: getItem(item[key+ "-Oct"]),
+                              nov: getItem(item[key+ "-Nov"]),
+                              dec: getItem(item[key+ "-Dec"])
                               ])   
                     }
              }

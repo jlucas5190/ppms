@@ -1,0 +1,333 @@
+,projectNo,Project Title,Credit Type ,Status,PMO Lead,SME,"Estm/
+Budg?",type,Budget 2015 ,,Current Forecast,2015-jan,2015-feb,2015-mar,2015-apr,2015-may,2015-jun,2015-jul,2015-aug,2015-sep,2015-oct,2015-nov,2015-dec,2017-jan,2017-feb,2017-mar,2017-apr,2017-may,2017-jun,2017-jul,2017-aug,2017-sep,2017-oct,2017-nov,2017-dec,2017 Current Forecast,Budget 2017,
+,64901,MCS Peripheral Asset Replacement - 2015,,Execute,,,Estm,Capital,#REF!,,$225k,,,,,,$171k,$36k,$7k,$k,$6k,$5k,,,,,,,,,,,,,,$k,$k,0
+,,,,,,,Estm,Expense,#REF!,,$100k,,,,,,,,$40k,$30k,$10k,$10k,$10k,,,,,,,,,,,,,$k,$k,0
+1,64914,QC M9 TOC Analyzers,,,,,Estm,Capital,,,,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+,,,,,,,Estm,Expense,,,,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+1,64923,QC Met-One Air Sampler Replacement 2015,,,,,Estm,Capital,,,,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+,,,,,,,Estm,Expense,,,,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+1,64927,QC Gel Imager Replacement 2015,,,,,Estm,Capital,,,,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+,,,,,,,Estm,Expense,,,,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+,73356,Supplemental BDU Sampling,Individual,Execute 2,CAPA 746996. Investigation 724033 determined that dilution occurs in the Actemra SC die to the presence of residual buffer in the transfer line which entered the conditioning vessel prior to the dispensing operation. These additional controls were also requested by the EMA health authority. Also Chugai requires a separate sample for release of the product in Japan.,Jim Neeleman,Estm,Capital,#REF!,#REF!,"$1,475k",$81k,$100k,-$3k,$296k,$157k,$141k,$144k,$111k,$115k,$123k,$115k,$95k,,,,,,,,,,,,,$k,$k,0
+,,,,,,,Estm,Expense,#REF!,#REF!,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+,73367,FS & DS Automation Integration,Individual,Execute 2,Compliance risk. Strategy for P2 Project Readiness. Reduce number of validation deviations for DDS error. ,Zaymar Sedra ,Estm,Capital,#REF!,#REF!,$467k,,$212k,-$16k,$103k,$28k,$25k,$28k,$26k,$16k,$29k,$16k,,,,,,,,,,,,,,$k,$k,0
+,,,,,,,Estm,Expense,#REF!,#REF!,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+,73384,Caustic Bath Upgrade,,Execute,,,Estm,Capital,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+,,,,,,,Estm,Expense,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+,73387,MCSBACKUP Phase 2 Tape Retrieval,,Execute,,,Estm,Capital,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+,,,,,,,Estm,Expense,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+,73388,SIMCA Online Real Time Process Monitoring System,Global,Execute,"As we have run rates have increased we have seen more issues occur due to operational equipment issues.  Discrepancies have also increased (i.e. Post DBX actemra campaign.) Can contribute to sight goal of investigation free lots. SIMCA is expected to improve process monitoring in real time, decrease discrepancies and investigations, potential save batches. ",Jim Neeleman,Estm,Capital,#REF!,#REF!,$264k,$258k,,,,,$1k,$5k,,,,,,,,,,,,,,,,,,$k,$k,0
+,,,,,,,Estm,Expense,#REF!,#REF!,$22k,,,,,$1k,$3k,$3k,$3k,$3k,$3k,$3k,$3k,,,,,,,,,,,,,$k,$k,0
+1,73398,MCS Manufacturing Area Wireless Access Point Asset Replacement - 2015,Global,Execute,"Improve current wireless access points in ""dead spots"" within the MFG to satisfy new user requirements and improve network performance. Current system is not reliable and puts in risk operations for lack of control in the system due to connectivity  failure. ",Scott Fields,Estm,Capital,#REF!,#REF!,$116k,,,,,,,,,$5k,$11k,$60k,$40k,,,,,,,,,,,,,$k,$k,0
+,,,,,,,Estm,Expense,#REF!,#REF!,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+,73399,Frit Handling and Storage,Global,Execute,"The current system has some inefficiency: a) the storage does not segregate the frits based on product b) the frit handling requires four people, and c) there is not enough space inside column packing. On the contrary, the new handling and storage methods greatly reduce footprint, increase frit protection, eliminates risk for injury and personnel needed for frit replacement.",Melanie Yevilov,Estm,Capital,#REF!,#REF!,$15k,,,,,,,,,,$15k,,,,,,,,,,,,,,,$k,$k,0
+,,,,,,,Estm,Expense,#REF!,#REF!,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+1,73409,Solar Power Enabling Project,,Execute,,,Estm,Capital,#REF!,#REF!,$184k,,,,,,,,,,$26k,$49k,$109k,,,,,,,,,,,,,$k,$k,0
+,,,,,,,Estm,Expense,#REF!,#REF!,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+1,74119,Harvest Upgrade (New Centrifuge),Individual,Execute 2,Hermetic centrifugation has been specified by PTDU as a required technical capability of platform processes in order to minimize risk of antibody reduction and batch losses.,Zaymar Sedra ,Estm,Capital,#REF!,#REF!,"$4,492k",,,,,,,"$2,049k",$448k,$389k,$501k,$528k,$577k,$849k,$869k,$781k,$750k,$745k,$714k,$651k,$650k,$476k,$470k,$242k,$39k,"$7,237k","$7,237k",0
+,,,,,,,Estm,Expense,#REF!,#REF!,$42k,,,,,,,$3k,$3k,$3k,$3k,$3k,$27k,$48k,$1k,$1k,$1k,$1k,,,,,,,,$51k,$51k,0
+1,74127,Harvest Modifications Start-up,,Budgeted,,,Estm,Capital,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,"$2,275k",-2275000
+,,,,,,,Estm,Expense,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+1,74268,P2 Downstream Processing Expansion,Individual,Execute 2,"The CMContinuum WS3.1 LM Launch Facilities Workstream developed a subsequently recommended to the PTLT for a regional DS Launch Model of which a second purification suite at OCN was a necessary part. Simultaneous manufacturing in two purification suites, supplied from existing cell culture operations while attaining the current run rate of OCN. This project will achieve compliance with the approved strategy for network launch capability and permit the network to execute against the endorsement LM Drug Substance Launch Facilities strategy, part of which is enabling launch of products with a standard and demand at OCN in the USA. ",Zaymar Sedra ,Estm,Capital,#REF!,#REF!,"$46,114k",-$761k,"$1,384k","$1,731k","$2,455k","$5,656k","$3,566k","$5,313k","$3,897k","$5,141k","$6,318k","$6,234k","$5,181k","$6,312k","$5,696k","$4,805k","$4,001k","$3,578k","$2,924k","$2,804k","$2,279k",$390k,$144k,$144k,$288k,"$33,364k","$33,364k",0
+,,,,,,,Estm,Expense,#REF!,#REF!,"$3,346k",$9k,$11k,$16k,$90k,$54k,$34k,$47k,-$84k,$50k,$51k,$54k,"$3,011k",$146k,$144k,$142k,$116k,$115k,$110k,$107k,$37k,,,,,$916k,$916k,0
+,74277,P2 DPE Start-Up,,Execute,,,Estm,Capital,#REF!,,$k,,,,,,,,,,,,,"$2,181k","$2,184k","$6,857k","$6,491k","$6,255k","$6,157k","$6,052k","$1,118k",$899k,$957k,$608k,$524k,"$40,281k","$40,281k",-1
+,,,,,,,Estm,Expense,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+,74279,New Media Technology - HTST / Adventitious,Individual,Execute 2,"In order to fulfill commitment to FDA. OCN currently does not have viral barriers for small scale cell culture medias and solutions. Satifies CAPA 585313, 740579. ",Scott Fields,Estm,Capital,#REF!,#REF!,"$2,072k",$9k,$97k,$7k,$116k,$82k,$110k,$69k,$78k,$561k,$354k,$310k,$279k,$518k,$414k,$379k,$171k,$66k,$5k,,,,,,,"$1,553k","$1,553k",0
+,,,,,,,Estm,Expense,#REF!,#REF!,$2k,,,,$3k,-$1k,,,,,,,,$38k,,,,,,,,,,,,$38k,$38k,0
+1,74302,Waterpooling Remediation,Individual,Execute 2,"Global Quality, the site has a CAPA 719091 to mitigate water pooling in response to Global CAPA. Complete not later than Sep 2014. Achieve compliance with Roche/GNE Global and OCN Site Quality. ",Jim Neeleman,Estm,Capital,#REF!,#REF!,$510k,,$139k,,$134k,$75k,$41k,$25k,$18k,$24k,$8k,$1k,$45k,$50k,,,,,,,,,,,,$50k,$50k,0
+,,,,,,,Estm,Expense,#REF!,#REF!,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+,74368,Dev/Val Automation Capacity Expansion,,Execute,,,Estm,Capital,#REF!,#REF!,$56k,$68k,-$12k,,,$3k,-$3k,,,,,,,,,,,,,,,,,,,$k,$k,0
+,,,,,,,Estm,Expense,#REF!,#REF!,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+,74373,WFI Generation and Storage System / CUB Expansion,Individual,Execute 2,The additional WFI-RO-DI systems will provide system redundancy for repair/maintenance and increased capacity for higher run rates. Current equipment is running at minimum 80% capacity to meet production needs. Existing CUB space is not sufficient. New WFI system cannot be located outside or within any other site building,Zaymar Sedra ,Estm,Capital,#REF!,#REF!,"$6,162k",$31k,$376k,$759k,$303k,$590k,$176k,$160k,$400k,$815k,$551k,$900k,"$1,100k",,,,,,,,,,,,,$k,$k,0
+,,,,,,,Estm,Expense,#REF!,#REF!,$93k,,$3k,$2k,$2k,$7k,$2k,$8k,$26k,$33k,$4k,$4k,$3k,,,,,,,,,,,,,$k,$k,0
+1,74382,Sci&Eng Lab Mods and Equipment,Individual,Execute 2,"To expand capacity of Science and Engineering laboratory. Expansion of the laboratory capacity with additional equipment and head count would enable Science and Engineering group to support launching activities at small and pilot scale such as technical transfer, PCPV support, and make-assess-release.",Jim Neeleman,Estm,Capital,#REF!,#REF!,"$5,270k",,,,"$1,056k",$203k,$168k,$185k,$609k,$128k,"$1,282k","$1,100k",$539k,                       -  ,$32k,$107k,$93k,$74k,$79k,$6k,,,,,,$391k,$391k,0
+,,,,,,,Estm,Expense,#REF!,#REF!,$2k,,,,$3k,-$1k,,,,,,,,,,,,,,,,,,,,$k,$k,0
+,74392,Water Reclaim System,Individual,Execute,There is a Roche US SHEP 12 requires annual objectives and targets for water use reduction,Scott Fields,Estm,Capital,#REF!,#REF!,$180k,,,,$8k,$26k,$23k,$37k,$30k,$48k,$2k,$4k,$2k,,,,,,,,,,,,,$k,$k,0
+,,,,,,,Estm,Expense,#REF!,#REF!,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+1,74404,Mezzanine Lift Media Prep: Phase 1B,Individual,Execute,"To provide the ability for lifting manufacturing materials and janitorial buckets to mezzanines in order to reduce the risk of personal injury to contractor and employees and improved safety ops. 
+",Melanie Yevilov,Estm,Capital,#REF!,#REF!,$262k,,$10k,,$10k,$34k,$101k,$21k,$12k,$17k,$17k,$20k,$20k,,,,,,,,,,,,,$k,$k,0
+,,,,,,,Estm,Expense,#REF!,#REF!,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+1,74406,Corrosive Chemical Compliance,Individual,Execute,"Bldg. 311, Bldg. 321, and Bldg. 341 are exceeding the allowable limit for caustics per CA Fire Code for solutions greater than 1% by volume. OCN is currently out of compliance and being given clearance for now by the local fire department. It is about life safety to our employees and local responding agencies. ",Scott Fields,Estm,Capital,#REF!,#REF!,$98k,,,,$6k,$12k,$25k,$22k,$2k,$5k,$5k,$19k,$2k,$84k,,,,,,,,,,,,$84k,$84k,0
+,,,,,,,Estm,Expense,#REF!,#REF!,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+1,74416,Asphyxiant Gas Remediation,Individual,Execute 1,OCN has identified spaces that are deemed unsafe for occupancy if a Nitrogen release occurs. Currently out of compliance and are being given a hall pass for now by the local safe department.  ,Melanie Yevilov,Estm,Capital,#REF!,#REF!,$33k,,,,,,,,$2k,$1k,$8k,$22k,,,,,,,,,,,,,,$k,$k,0
+,,,,,,,Estm,Expense,#REF!,#REF!,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+1,74418,QC Lab Reconfiguration & Equipment,Individual,Execute 1,Problem Statements:  1) Current Configuration could result in a false negative or false positive result in our PCR suite.  Oceanside’s PCR suite is used to test Adventitious Material for the Network. 2) QC Equipment needs to be updated for reliance and technology improvements to support CMC Continuum. 3) P2 will create an additional sample load on samples that are not Run rate specific.   The current QC labs are not designed to handle this increased sample size.,Jim Neeleman,Estm,Capital,#REF!,#REF!,$213k,,,,,$1k,$15k,$45k,$26k,$59k,$39k,$28k,,$144k,$146k,,,,,,,,,,,$290k,$290k,0
+,,,,,,,Estm,Expense,#REF!,#REF!,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+,74426,Process VSD and SOV Replacement - 2015,Individual,Execute,Both SOV and VSD problem create a great risk to reliable operations. The 2016 SD is a window opportunity to perform some or all of the identified equipment replacements. ,Scott Fields,Estm,Capital,#REF!,#REF!,$203k,,,,,,,,,$6k,$47k,$100k,$50k,,,,,,,,,,,,,$k,$k,0
+,,,,,,,Estm,Expense,#REF!,#REF!,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+,74427,MCS Network Infrastructure Asset Replacement - 2016,,Execute,,,Estm,Capital,#REF!,,$7k,,,,,,,,,,,,$7k,,,,,,,,,,,,,$k,$k,0
+,,,,,,,Estm,Expense,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+1,74429,Mettler Toledo Weight Transmitter Conversion to Hardy Weight Transmitter - Asset Replacement,Individual,Execute,Failure of tramsmitters has increased. Once the Mettler Toledo fails an emergency change is initiated. An organized and scheduled conversion would reduce the cost and labor impact for each implementation.,Scott Fields,Estm,Capital,#REF!,#REF!,$311k,,,,,,,,$2k,$4k,$210k,$55k,$40k,$21k,$2k,,,,,,,,,,,$23k,$23k,0
+,,,,,,,Estm,Expense,#REF!,#REF!,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+1,74453,NPI Pool Tanks,,PTAA,,,Estm,Capital,#REF!,#REF!,$545k,,,,,,$273k,,,$273k,,,,$22k,$15k,$1k,$k,,,,,,,,,$38k,$38k,0
+,,,,,,,Estm,Expense,#REF!,#REF!,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+1,74454,Seed Lab (20L Bioreactor),,Execute,,,Estm,Capital,#REF!,#REF!,$755k,,,,,,,$345k,$75k,$65k,$84k,$89k,$97k,$204k,$141k,$41k,$36k,$7k,$1k,$1k,$1k,$1k,$1k,$1k,$2k,$439k,$439k,0
+,,,,,,,Estm,Expense,#REF!,#REF!,$7k,,,,,,,$k,$k,$1k,$1k,$1k,$4k,$1k,$1k,$k,$k,,,,,,,,,$2k,$2k,0
+1,74455,3rd HCCF Vessel,,Execute,,,Estm,Capital,#REF!,#REF!,"$1,079k",,,,,,,$492k,$108k,$94k,$120k,$127k,$139k,,,,,,,,,,,,,$k,$k,0
+,,,,,,,Estm,Expense,#REF!,#REF!,$10k,,,,,,,$1k,$1k,$1k,$1k,$1k,$6k,,,,,,,,,,,,,$k,$k,0
+1,74486,PCS Controller Cabinet Asset Replacement,,Execute,,,Estm,Capital,#REF!,,$450k,,,,,,,,,,$100k,$100k,$250k,$110k,,,,,,,,,,,,$110k,$110k,0
+,,,,,,,Estm,Expense,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+1,74487,Process VSD and SOV Asset Replacement,,Execute,,,Estm,Capital,#REF!,,$k,,,,,,,,,,,,,$877k,"$1,530k",$519k,,,,,,,,,,"$2,925k","$2,925k",0
+,,,,,,,Estm,Expense,#REF!,,$k,,,,,,,,,,,,,$18k,,,,,,,,,,,,$18k,$18k,0
+,74489,4040 Avenida Conference Center Acquisition,,Execute,,,Estm,Capital,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+,,,,,,,Estm,Expense,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+,74490,Hyfish Material Screening Operation,,Execute,,,Estm,Capital,#REF!,,$782k,,,,,,,,,,$36k,$173k,$573k,,,,,,,,,,,,,$k,$k,0
+,,,,,,,Estm,Expense,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+,74491,Etro Tech Transfer,,Hold,,,Estm,Capital,#REF!,,$k,,,,,,,,,,,,,$817k,$191k,"$1,645k",$436k,$360k,"$1,856k",$484k,$484k,"$1,932k",$479k,$445k,"$3,575k","$12,702k","$9,066k",3636061
+,,,,,,,Estm,Expense,#REF!,,$k,,,,,,,,,,,,,$13k,$4k,$9k,$23k,$9k,$24k,$14k,$9k,$9k,$9k,$9k,$4k,$135k,"$3,771k",-3636061
+1,74510,PCS Asset Replacement - 2016,,Execute,,,Estm,Capital,#REF!,,$k,,,,,,,,,,,,,$149k,,,,,,,,,,,,$149k,$149k,0
+,,,,,,,Estm,Expense,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+1,74511,QR018 Compliance Steam and Condensate Containment,,Execute,,,Estm,Capital,#REF!,,$k,,,,,,,,,,,,,$488k,$449k,$365k,$245k,$185k,$113k,$125k,$245k,$245k,$245k,$245k,$125k,"$3,075k","$3,075k",0
+,,,,,,,Estm,Expense,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+,74524,Bioburden 2606 IPA Exhaust Improvement,,Execute,,,Estm,Capital,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+,,,,,,,Estm,Expense,#REF!,,$k,,,,,,,,,,,,,$138k,$138k,$138k,$138k,,,,,,,,,$550k,$k,550000
+1,74526,Utility Process Safety System,,FXNL LT Appr,,,Estm,Capital,#REF!,,$k,,,,,,,,,,,,,$58k,,,,,,,,,,,,$58k,$58k,0
+,,,,,,,Estm,Expense,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+,76643,Optimize Column Movement Device,Global,Execute,"With the current equipment operators need to bend down carrying heavy hydraulic jacks, synchronize lifting operation making it unsafe and difficult, the whole lifting and moving process takes a long time.  ",Melanie Yevilov,Estm,Capital,#REF!,#REF!,$68k,$25k,,,,,$35k,,,,$8k,,,,,,,,,,,,,,,$k,$k,0
+,,,,,,,Estm,Expense,#REF!,#REF!,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+1,65005,Analytical Scale,,,,,Estm,Capital,,,,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+,,,,,,,Estm,Expense,,,,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+1,65009,Drum Mover/Raw Material Tenderizer,,,,,Estm,Capital,,,,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+,,,,,,,Estm,Expense,,,,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+,65018,Spare Bowl for Hermetic Centrifuge,,Execute,,,Estm,Capital,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+,,,,,,,Estm,Expense,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+1,65015,Lower Solid Collector for Centrifuge,,Execute,,,Estm,Capital,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+,,,,,,,Estm,Expense,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+,96991,Asset Replacement 2016 - Engineering (cc642),,FXNL LT Appr,,,Estm,Capital,#REF!,,$73k,,,,,,,,,,,$2k,$71k,,,,,,,,,,,,,$k,$500k,-500000
+,,,,,,,Estm,Expense,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$5k,-5000
+,96992,Asset Replacement 2016 - Material Ops (cc484),,FXNL LT Appr,,,Estm,Capital,#REF!,,$73k,,,,,,,,,,,$2k,$71k,,,,,,,,,,,,,$k,"$1,168k",-1167829
+,,,,,,,Estm,Expense,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$10k,-10000
+,96993,Asset Replacement 2016 - Manufacturing (cc1359),,FXNL LT Appr,,,Estm,Capital,#REF!,,$73k,,,,,,,,,,,$2k,$71k,,,,,,,,,,,,,$k,$365k,-365000
+,,,,,,,Estm,Expense,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+,96994,Asset Replacement 2016 - Manufacturing (cc659),,FXNL LT Appr,,,Estm,Capital,#REF!,,$73k,,,,,,,,,,,$2k,$71k,,,,,,,,,,,,,$k,$158k,-157778
+,,,,,,,Estm,Expense,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+,96995,Asset Replacement 2016 - Quality (cc583),,FXNL LT Appr,,,Estm,Capital,#REF!,,$73k,,,,,,,,,,,$2k,$71k,,,,,,,,,,,,,$k,$723k,-722929
+,,,,,,,Estm,Expense,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+,96997,Asset Replacement 2016 - Maintenance (cc1236),,FXNL LT Appr,,,Estm,Capital,#REF!,,$73k,,,,,,,,,,,$2k,$71k,,,,,,,,,,,,,$k,$56k,-56049
+,,,,,,,Estm,Expense,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+1,65020,QC Auto-Pipettor for Potency Assay,,Execute,,,Estm,Capital,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+,,,,,,,Estm,Expense,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+1,65023,QC Plate Washer for Potency Assay,,Execute,,,Estm,Capital,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+,,,,,,,Estm,Expense,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+,73442,V-2170 Agitator Drain Valve,,#N/A,,,Estm,Capital,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+,,,,,,,Estm,Expense,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+1,65021,Hazardous Material Response Cart,,Execute,,,Estm,Capital,#REF!,,$18k,,,,,,,,,,,,$18k,,,,,,,,,,,,,$k,$k,0
+,,,,,,,Estm,Expense,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+1,65024,Sci and Eng Lab Incubator and Freezer Asset Replacement,,Execute,,,Estm,Capital,#REF!,,$18k,,,,,,,,,,,,$18k,$101k,$76k,$74k,$77k,$74k,$81k,$6k,,,,,,$489k,$k,488779
+,,,,,,,Estm,Expense,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+1,96174,Fall Protection Phase II,,CA Routing,,,Estm,Capital,#REF!,,$18k,,,,,,,,,,,,$18k,$5k,,,,,,,,,,,,$5k,$5k,0
+,,,,,,,Estm,Expense,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+1,65040,Sci&Eng Cryofreezer,,Execute,,,Estm,Capital,#REF!,,$18k,,,,,,,,,,,,$18k,,,,,,,,,,,,,$k,$k,0
+,,,,,,,Estm,Expense,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+1,65037,Analytical Scales (CAPA 1150248),,Execute,,,Estm,Capital,#REF!,,$18k,,,,,,,,,,,,$18k,,,,,,,,,,,,,$k,$k,0
+,,,,,,,Estm,Expense,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+,64898,Terumo Sterile BCT SCDIIB Welders,,#N/A,,,Estm,Capital,#REF!,,$18k,,,,,,,,,,,,$18k,,,,,,,,,,,,,$k,$k,0
+,,,,,,,Estm,Expense,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+1,65048,Process Maintenance Boroscope,,,,,Estm,Capital,,,,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+,,,,#N/A,,,Estm,Expense,#REF!,#REF!,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+1,74535,Draining of Top Mounted Agitator Well (CAPA 1140940),,,,,Estm,Capital,,,,,,,,,,,,,,,,$138k,$80k,$229k,$207k,,,,,,,,,$654k,$654k,0
+,,,,#N/A,,,Estm,Expense,#REF!,#REF!,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+1,65044,Additional MCS Backup Storage,,,,,Estm,Capital,,,,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+,,,,#N/A,,,Estm,Expense,#REF!,#REF!,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+1,74431,Buffer Prep Mezzanine Lift Construction,Global,JPMT Appr,Continued risk to staff injury while transporting materials. Higher run rates increase this risk. VV and Penzburg have list systems to assist with material and equipment movement. ,Scott Fields,Estm,Capital,#REF!,#REF!,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+,,,,,,,Estm,Expense,#REF!,#REF!,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+1,96139,Trash Bin Storm Water Mitigation,,FXNL LT Appr,,,Estm,Capital,#REF!,,$k,,,,,,,,,,,,,$20k,$40k,$60k,$80k,,,,,,,,,$200k,$200k,0
+,,,,,,,Estm,Expense,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+,,,,#N/A,,,Estm,Capital,#REF!,,$18k,,,,,,,,,,,,$18k,,,,,,,,,,,,,$k,$k,0
+,,,,,,,Estm,Expense,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+,,,,#N/A,,,Estm,Capital,#REF!,,$18k,,,,,,,,,,,,$18k,,,,,,,,,,,,,$k,$k,0
+,,,,,,,Estm,Expense,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+,,,,#N/A,,,Estm,Capital,#REF!,,$18k,,,,,,,,,,,,$18k,,,,,,,,,,,,,$k,$k,0
+,,,,,,,Estm,Expense,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+,,,,#N/A,,,Estm,Capital,#REF!,,$18k,,,,,,,,,,,,$18k,,,,,,,,,,,,,$k,$k,0
+,,,,,,,Estm,Expense,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,
+,96991,Asset Replacement 2016 - Engineering (cc642),,FXNL LT Appr,,,Estm,Capital,#REF!,,$73k,,,,,,,,,,,$2k,$71k,,,,,,,,,,,,,$k,$500k,-500000
+,,,,,,,Estm,Expense,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$5k,-5000
+,96992,Asset Replacement 2016 - Material Ops (cc484),,FXNL LT Appr,,,Estm,Capital,#REF!,,$73k,,,,,,,,,,,$2k,$71k,,,,,,,,,,,,,$k,"$1,168k",-1167829
+,,,,,,,Estm,Expense,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$10k,-10000
+,96993,Asset Replacement 2016 - Manufacturing (cc1359),,FXNL LT Appr,,,Estm,Capital,#REF!,,$73k,,,,,,,,,,,$2k,$71k,,,,,,,,,,,,,$k,$365k,-365000
+,,,,,,,Estm,Expense,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+,96994,Asset Replacement 2016 - Manufacturing (cc659),,FXNL LT Appr,,,Estm,Capital,#REF!,,$73k,,,,,,,,,,,$2k,$71k,,,,,,,,,,,,,$k,$158k,-157778
+,,,,,,,Estm,Expense,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+,96995,Asset Replacement 2016 - Quality (cc583),,FXNL LT Appr,,,Estm,Capital,#REF!,,$73k,,,,,,,,,,,$2k,$71k,,,,,,,,,,,,,$k,$723k,-722929
+,,,,,,,Estm,Expense,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+,96997,Asset Replacement 2016 - Maintenance (cc1236),,FXNL LT Appr,,,Estm,Capital,#REF!,,$73k,,,,,,,,,,,$2k,$71k,,,,,,,,,,,,,$k,$56k,-56049
+,,,,,,,Estm,Expense,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+,96159,OCC Network Remediation,,Idea,,,Estm,Capital,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+,,,,,,,Estm,Expense,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+,74435,Hastelloy Chromatography Column (160cm),,FXNL LT Appr,,,Estm,Capital,#REF!,,$k,,,,,,,,,,,,,$9k,$526k,$89k,$9k,$81k,$k,$580k,$k,$k,$25k,$22k,$207k,"$1,549k","$1,149k",399958
+,,,,,,,Estm,Expense,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+,96135,QC Spectrophotmeters,,Canceled,,,Estm,Capital,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+,,,,,,,Estm,Expense,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+,74527,Vessel 1020 Upgrade,,Idea,,,Estm,Capital,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+,,,,,,,Estm,Expense,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+,96134,QC Liquid Handler,,#N/A,,,Estm,Capital,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+,,,,,,,Estm,Expense,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+1,96137,Security Systems Upgrade,,JPMT Appr,,,Estm,Capital,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+,,,,,,,Estm,Expense,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+,74385,Media Prep Endotoxin/Bioburden Sampling,,Hold,,,Estm,Capital,#REF!,,$k,,,,,,,,,,,,,$83k,$83k,$83k,,,,,,,,,,$250k,$k,250000
+,,,,,,,Estm,Expense,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+1,74546,Mezzanine Safety Shower/Eye Wash Station Install,,IMPACT Appr,,,Estm,Capital,#REF!,,$k,,,,,,,,,,,,,$233k,$233k,$233k,,,,,,,,,,$700k,$436k,263999
+,,,,,,,Estm,Expense,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+,96164,Hazardous Materials Containers Washing Station,,Hold,,,Estm,Capital,#REF!,,$k,,,,,,,,,,,,,,,,,,,$30k,,,,,,$30k,$30k,0
+,,,,,,,Estm,Expense,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+,96167,Emergency Generator High Level Alarm,,Idea,,,Estm,Capital,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+,,,,,,,Estm,Expense,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+,96168,Replace Warehouse #321 Sprinkler Heads,,Idea,,,Estm,Capital,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+,,,,,,,Estm,Expense,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+,74525,CIP Reliability and Efficiency - PI,,,,,Estm,Capital,,,,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+,,,,#N/A,,,Estm,Expense,#REF!,#REF!,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+1,65066,Appleton Tank Mover,,,,,Estm,Capital,,,,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+,,,,#N/A,,,Estm,Expense,#REF!,#REF!,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+,74513,Electric Vehicle Charging Stations,,,,,Estm,Capital,,,,,,,,,,,,,,,,,,,,,,,,,,,,$k,$712k,-712000
+,,,,#N/A,,,Estm,Expense,#REF!,#REF!,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$18k,-18000
+,96112,Maintenance Ops Shop Buildout,,,,,Estm,Capital,,,,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+,,,,#N/A,,,Estm,Expense,#REF!,#REF!,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+,96999,Site Adjustment ,,TBD,,,Estm,Capital,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+,,,,,,,Estm,Expense,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+,,TOTAL Capex,,,,TOTAL,,,#REF!,#REF!,"$75,640k",-$306k,"$2,320k","$2,496k","$4,585k","$6,928k","$4,700k","$9,003k","$5,794k","$7,857k","$9,949k","$10,116k","$12,197k","$13,872k","$12,994k","$16,558k","$12,875k","$11,549k","$12,064k","$10,859k","$4,823k","$3,951k","$2,331k","$1,715k","$4,764k","$108,354k","$115,376k",
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+1,82000,I&C Engineering and Instrument Configuration Management System Remediation Project (CAPA 982343),,Execute 1,,,Estm,Expense,#REF!,,$38k,,,,,,,,$k,$5k,$k,$32k,,$108k,$101k,$80k,$221k,$66k,,,,,,,,$575k,$575k,0
+1,97003,MFG Systems Integration Improvement Phase 1 - 2015,,Execute 1,,,Estm,Expense,#REF!,#REF!,$15k,,,,,,,,,,,,$15k,$45k,$45k,$45k,,,,,,,,,,$135k,$135k,0
+,97007,Automation System Lifecycle MCS Upgrade,,Execute,,,Estm,Expense,#REF!,#REF!,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+,97048,Arc Flash Prevention,,Execute,,,Estm,Expense,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+1,97058,Parking Pavement Repair,,Execute,,,Estm,Expense,#REF!,#REF!,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+,98026,Launch Capability Program (LCP),,,,,Estm,Expense,#REF!,#REF!,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+,97059,B311 & B321 Gowning Room Modifications,,Execute,,,Estm,Expense,#REF!,#REF!,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+1,N/A,"CRB, travel, ofc supplies, trailer, others ",,,,,Estm,Expense,$925k,$k,$925k,$77k,$77k,$77k,$77k,$77k,$77k,$77k,$77k,$77k,$77k,$77k,$77k,$26k,$26k,$26k,$26k,$26k,$26k,$26k,$26k,$26k,$26k,$26k,$26k,$317k,$317k,0
+1,,PCS Asset Replacement Depreciation Write-Off,,,,,Estm,Expense,,,,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+1,,Piping Corrosion,,,,,Estm,Expense,#REF!,#REF!,$k,,,,,,,,,,,,,$455k,$322k,$272k,$332k,$420k,$467k,$500k,$471k,$461k,$430k,$319k,$339k,"$4,788k","$4,788k",0
+1,97057,Conference Room 315 Expansion,,Idea,,,Estm,Expense,,,,,,,,,,,,,,,,$192k,,,,,,,,,,,,$192k,$k,192000
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,97040,Tech Transfer: Master Data Management,,FXNL LT Appr,,,Estm,Expense,#REF!,#REF!,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+,97038,PCS Functional Specification Development Project (CAPA 960297),,FXNL LT Appr,,,Estm,Expense,#REF!,#REF!,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$500k,-500000
+,97039,PCS Remediation for EBR Review by Exception - PI,,Idea,,,Estm,Expense,#REF!,#REF!,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$250k,-250000
+,97045,Site Exterior Lighting Upgrade - Title 24,,FXNL LT Appr,,,Estm,Expense,#REF!,#REF!,$k,,,,,,,,,,,,,$33k,$33k,$33k,,,,,,,,,,$100k,$100k,-1
+,97999,Site Adjustment,,,,,Estm,Expense,#REF!,#REF!,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,
+,,TOTAL Expense Projects,,,,TOTAL,,,#REF!,#REF!,$978k,$77k,$77k,$77k,$77k,$77k,$77k,$77k,$77k,$82k,$77k,$109k,$92k,$860k,$527k,$456k,$579k,$512k,$494k,$526k,$498k,$488k,$457k,$345k,$366k,"$6,107k","$6,665k",
+,,Total Capital ,,,,TOTAL,,Capital,#REF!,,"$73,240k",-$229k,"$2,397k","$2,573k","$4,662k","$7,005k","$4,777k","$9,080k","$5,872k","$7,939k","$10,027k","$10,225k","$12,289k","$13,471k","$12,707k","$16,268k","$12,597k","$11,425k","$11,930k","$10,738k","$4,777k","$3,943k","$2,322k","$1,706k","$4,760k","$106,644k","$110,532k",
+,,Total Expense,,,,,,Expense,#REF!,,"$4,502k",,,,,,,,,,,,,"$1,260k",$814k,$747k,$857k,$636k,$628k,$647k,$543k,$497k,$466k,$354k,$370k,"$7,817k","$11,510k",
+,,Cashflow Variance ,,,,,,Capital,#REF!,#DIV/0!,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,Expense,#REF!,#DIV/0!,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,"-47,779,192.94",,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,10%,12%,9%,10%,10%,10%,8%,7%,7%,6%,6%,5%,,,
+,,,,,,,,,,,,,,,,,,,,,,,,5%,8%,6%,5%,6%,8%,9%,8%,11%,21%,7%,7%,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,BELOW THE LINE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+0,96162,Pressure Safety Improvements,,#N/A,,,Estm,Capital,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+,,,,,,,Estm,Expense,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+0,64922,QC Mettler Toledo Balances Replacement 2015,,#N/A,,,Estm,Capital,#REF!,,$60k,,,,,,,,,,$40k,-$23k,$43k,,,,,,,,,,,,,$k,$k,0
+,,,,,,,Estm,Expense,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+0,64924,QC Biotek LAL Reader Replacement 2015,,#N/A,,,Estm,Capital,#REF!,,$19k,,,,,,,,,,$17k,,$2k,,,,,,,,,,,,,$k,$k,0
+,,,,,,,Estm,Expense,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+0,64926,QC SpeedVac Replacement 2015,,#N/A,,,Estm,Capital,#REF!,,$12k,,,,,,,,,$12k,,,,,,,,,,,,,,,,$k,$k,0
+,,,,,,,Estm,Expense,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+1,74371,Odor Treatment,,FXNL LT Appr,,,Estm,Capital,#REF!,,$100k,,,,,,,,,,,$50k,$50k,,,,,,,$125k,$125k,$125k,$125k,$125k,$125k,$750k,$k,750000
+,,,,,,,Estm,Expense,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+0,96136,V-3007 Replacement,,FXNL LT Appr,,,Estm,Capital,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$120k,-120000
+,,,,,,,Estm,Expense,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+0,96165,WAN Link Redundancy,,Hold,,,Estm,Capital,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+,,,,,,,Estm,Expense,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+1,74409,K6 Program - Project 1 - Replace DX HVAC Units,Individual,Execute,"Existing DX HVAC units use R-410A refrigerant which must be eliminated per Roche K6 directive. In Scope: DX HVAC units in 321, 322, 341, 361, and 371.",Zaymar Sedra ,Estm,Capital,#REF!,#REF!,$90k,,,,,,,,,,,$50k,$40k,,,,,,,,,$10k,$100k,$100k,$100k,$310k,$310k,0
+,,,,,,,Estm,Expense,#REF!,#REF!,$k,,,,,,,,,,,,,,,,,,,,,,$11k,$11k,,$22k,$22k,0
+1,74512,K6 Program - Project 2 - B381 Compliance,,FXNL LT Appr,,,Estm,Capital,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,$83k,$83k,$83k,$83k,$333k,$k,333333
+,,,,,,,Estm,Expense,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,$6k,$6k,$6k,$6k,$22k,$k,22222
+0,74278,K6 Program - Project 3 - Replace Cold Room Compressors,,FXNL LT Appr,,,Estm,Capital,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$528k,-528000
+,,,,,,,Estm,Expense,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$75k,-75000
+0,74432,K6 Program - Project 4 - Replace Chillers,,FXNL LT Appr,,,Estm,Capital,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+,,,,,,,Estm,Expense,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+0,96160,B331 HVAC Fire Code Compliance,,#N/A,,,Estm,Capital,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+,,,,,,,Estm,Expense,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+0,96133,QC Rapid Scan RDI System,,Hold,,,Estm,Capital,#REF!,,$k,,,,,,,,,,,,,,,,,$210k,,,,,,,,$210k,$210k,0
+,,,,,,,Estm,Expense,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+0,96163,MFG Depth Filter Housing,,Idea,,,Estm,Capital,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$300k,-300000
+,,,,,,,Estm,Expense,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$100k,-100000
+0,96124,Perjeta Tech Transfer,,Idea,,,Estm,Capital,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,"$8,794k",-8793594
+,,,,,,,Estm,Expense,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$147k,-147070
+0,96183,Site Signage Upgrade,,Idea,,,Estm,Capital,#REF!,,$k,,,,,,,,,,,,,$67k,$67k,$67k,,,,,,,,,,$200k,$175k,25000
+,,,,,,,Estm,Expense,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$25k,-25000
+0,96189,Pipe Labelling,,#N/A,,,Estm,Capital,#REF!,,$k,,,,,,,,,,,,,$33k,$33k,$33k,,,,,,,,,,$100k,$k,100000
+,,,,,,,Estm,Expense,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+0,96198,Crane & Hoist Mitigation,,#N/A,,,Estm,Capital,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+,,,,,,,Estm,Expense,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+0,96192,Pressure Safety Facility Mitigations,,#N/A,,,Estm,Capital,#REF!,,$k,,,,,,,,,,,,,$208k,$208k,$208k,$208k,$208k,$208k,$208k,$208k,$208k,$208k,$208k,$208k,"$2,500k",$k,2500000
+,,,,,,,Estm,Expense,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+0,96191,Utility and Process Safety System Phase 2,,Idea,,,Estm,Capital,#REF!,,$k,,,,,,,,,,,,,$167k,$167k,$167k,$167k,$167k,$167k,$167k,$167k,$167k,$167k,$167k,$167k,"$2,000k","$2,000k",0
+,,,,,,,Estm,Expense,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+0,96193,Column Packing Fall Hazard,,Canceled,,,Estm,Capital,#REF!,,$k,,,,,,,,,,,,,$25k,$25k,$25k,$25k,$25k,$25k,$25k,$25k,$25k,$25k,$25k,$25k,$300k,$k,300000
+,,,,,,,Estm,Expense,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+0,96195,K6- All Design,,#N/A,,,Estm,Capital,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+,,,,,,,Estm,Expense,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+0,96204,322 MRO Racks,,Hold,,,Estm,Capital,#REF!,,$k,,,,,,,,,,,,,$42k,$42k,$42k,$42k,$42k,$42k,$42k,$42k,$42k,$42k,$42k,$42k,$500k,$500k,0
+,,,,,,,Estm,Expense,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+0,,,,#N/A,,,Estm,Capital,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+,,,,,,,Estm,Expense,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+0,,,,#N/A,,,Estm,Capital,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+,,,,,,,Estm,Expense,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+0,,,,#N/A,,,Estm,Capital,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+,,,,,,,Estm,Expense,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+0,,,,#N/A,,,Estm,Capital,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+,,,,,,,Estm,Expense,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+0,,,,#N/A,,,Estm,Capital,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+,,,,,,,Estm,Expense,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+0,,,,#N/A,,,Estm,Capital,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+,,,,,,,Estm,Expense,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+0,,,,#N/A,,,Estm,Capital,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+,,,,,,,Estm,Expense,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+0,,,,#N/A,,,Estm,Capital,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+,,,,,,,Estm,Expense,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+0,,,,#N/A,,,Estm,Capital,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+,,,,,,,Estm,Expense,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+0,,,,#N/A,,,Estm,Capital,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+,,,,,,,Estm,Expense,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+0,,,,#N/A,,,Estm,Capital,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+,,,,,,,Estm,Expense,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+0,,,,#N/A,,,Estm,Capital,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+,,,,,,,Estm,Expense,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+0,,,,#N/A,,,Estm,Capital,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+,,,,,,,Estm,Expense,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+0,,,,#N/A,,,Estm,Capital,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+,,,,,,,Estm,Expense,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+0,,,,#N/A,,,Estm,Capital,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+,,,,,,,Estm,Expense,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+0,,,,#N/A,,,Estm,Capital,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+,,,,,,,Estm,Expense,#REF!,,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+0,97061,Tangential Flow Filtration Cassettes Management,,#REF!,,,Estm,Expense,#REF!,#REF!,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+0,97049,SIMCA Online - Downstream Application,,,,,Estm,Expense,,,,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+0,97029,Study for K6 Program - Project 4 - Replace Chillers,,#N/A,,,Estm,Expense,#REF!,#REF!,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0
+1,97054,HVAC Retro Commissioning,,FXNL LT Appr,,,Estm,Expense,#REF!,#REF!,$k,,,,,,,,,,,,,,,,$25k,$11k,$11k,$11k,$11k,$11k,$11k,$11k,$11k,$113k,$113k,0
+0,97060,QC Gas Cabinet Removal,,FXNL LT Appr,,,Estm,Expense,#REF!,#REF!,$k,,,,,,,,,,,,,,,,,,,,,,,,,$k,$k,0

@@ -14,188 +14,64 @@ import groovy.transform.InheritConstructors
  */
 @InheritConstructors
 class ResourceExtract extends  Extract{
-    def parseData(){
+    def parseData(budgetCycle, budgetYear, key){
            def resourceList = []
+        def  projectNo
+        def  projectNoText
           for (item in data){
-            if(!item.projectNo.isEmpty()){
-                  def projectNo = getProjectNo(item.projectNo)
-                   def projectNoText = item.projectNo
+              if(!item.projectNo.isEmpty()){
+                   projectNo = getProjectNo(item.projectNo)
+                   projectNoText = item.projectNo
+              }
                   def projectIndicator = getProjectIndicator(item.projectIndicator)
                   def program = getProgram(item.program)
             //Roche_curr
+                def type = item.type.toUpperCase()
 
-                             resourceList.add( [projectNo: projectNo ,
-                              projectIndicator: projectIndicator,
-                              projectNoText: projectNoText,
-                              program: program,
-                              resourceType: 1, //Roche
-                              budgetYear : 2, //2016
-                              budgetCycle: 4, //CURR
-                              jan: getItem(item.r_curr_jan_2016) ,
-                              feb: getItem(item.r_curr_feb_2016) ,
-                              mar: getItem(item.r_curr_mar_2016) ,
-                              apr: getItem(item.r_curr_apr_2016) ,
-                              may: getItem(item.r_curr_may_2016) ,
-                              jun: getItem(item.r_curr_jun_2016) ,
-                              jul: getItem(item.r_curr_jul_2016) ,
-                              aug: getItem(item.r_curr_aug_2016) ,
-                              sep: getItem(item.r_curr_sep_2016) ,
-                              oct: getItem(item.r_curr_oct_2016) ,
-                              nov: getItem(item.r_curr_nov_2016) ,
-                              dec: getItem(item.r_curr_dec_2016) 
-                              ])
-            //External_curr             
-       resourceList.add( [projectNo: projectNo ,
-                              projectIndicator: projectIndicator,
-                          projectNoText: projectNoText,
-                          program: program,
-                              resourceType: 2, //External
-                              budgetYear : 2, //2016
-                              budgetCycle: 4, //CURR
-                              jan: getItem(item.e_curr_jan_2016) ,
-                              feb: getItem(item.e_curr_feb_2016) ,
-                              mar: getItem(item.e_curr_mar_2016) ,
-                              apr: getItem(item.e_curr_apr_2016) ,
-                              may: getItem(item.e_curr_may_2016) ,
-                              jun: getItem(item.e_curr_jun_2016) ,
-                              jul: getItem(item.e_curr_jul_2016) ,
-                              aug: getItem(item.e_curr_aug_2016) ,
-                              sep: getItem(item.e_curr_sep_2016) ,
-                              oct: getItem(item.e_curr_oct_2016) ,
-                              nov: getItem(item.e_curr_nov_2016) ,
-                              dec: getItem(item.e_curr_dec_2016) 
-                              ]) 
-                          
-                 //Roche_t3    
-           resourceList.add( [projectNo: projectNo ,
-                              projectIndicator: projectIndicator,
-                              projectNoText: projectNoText,
-                              program: program,
-                              resourceType: 1, //Roche
-                              budgetYear : 2, //2016
-                              budgetCycle: 3, //T3
-                              jan: getItem(item.r_t3_jan_2016) ,
-                              feb: getItem(item.r_t3_feb_2016) ,
-                              mar: getItem(item.r_t3_mar_2016) ,
-                              apr: getItem(item.r_t3_apr_2016) ,
-                              may: getItem(item.r_t3_may_2016) ,
-                              jun: getItem(item.r_t3_jun_2016) ,
-                              jul: getItem(item.r_t3_jul_2016) ,
-                              aug: getItem(item.r_t3_aug_2016) ,
-                              sep: getItem(item.r_t3_sep_2016) ,
-                              oct: getItem(item.r_t3_oct_2016) ,
-                              nov: getItem(item.r_t3_nov_2016) ,
-                              dec: getItem(item.r_t3_dec_2016) 
-                              ])
-            //External_curr             
-       resourceList.add( [projectNo: projectNo ,
-                              projectIndicator: projectIndicator,
-                          projectNoText: projectNoText,
-                          program: program,
-                                    resourceType: 2, //External
-                              budgetYear : 2, //2016
-                              budgetCycle: 3, //t3
-                              jan: getItem(item.e_t3_jan_2016) ,
-                              feb: getItem(item.e_t3_feb_2016) ,
-                              mar: getItem(item.e_t3_mar_2016) ,
-                              apr: getItem(item.e_t3_apr_2016) ,
-                              may: getItem(item.e_t3_may_2016) ,
-                              jun: getItem(item.e_t3_jun_2016) ,
-                              jul: getItem(item.e_t3_jul_2016) ,
-                              aug: getItem(item.e_t3_aug_2016) ,
-                              sep: getItem(item.e_t3_sep_2016) ,
-                              oct: getItem(item.e_t3_oct_2016) ,
-                              nov: getItem(item.e_t3_nov_2016) ,
-                              dec: getItem(item.e_t3_dec_2016) 
-                              ])
-                //Roche_t3
-                resourceList.add( [projectNo: projectNo ,
-                                   projectIndicator: projectIndicator,
-                                   projectNoText: projectNoText,
-                                   program: program,
-                                   resourceType: 1, //Roche
-                                   budgetYear : 1, //2015
-                                   budgetCycle: 3, //T3
-                                   jan: getItem(item.r_t3_jan_2015) ,
-                                   feb: getItem(item.r_t3_feb_2015) ,
-                                   mar: getItem(item.r_t3_mar_2015) ,
-                                   apr: getItem(item.r_t3_apr_2015) ,
-                                   may: getItem(item.r_t3_may_2015) ,
-                                   jun: getItem(item.r_t3_jun_2015) ,
-                                   jul: getItem(item.r_t3_jul_2015) ,
-                                   aug: getItem(item.r_t3_aug_2015) ,
-                                   sep: getItem(item.r_t3_sep_2015) ,
-                                   oct: getItem(item.r_t3_oct_2015) ,
-                                   nov: getItem(item.r_t3_nov_2015) ,
-                                   dec: getItem(item.r_t3_dec_2015)
-                ])
-                //External_curr
-                resourceList.add( [projectNo: projectNo ,
-                                   projectIndicator: projectIndicator,
-                                   projectNoText: projectNoText,
-                                   program: program,
-                                   resourceType: 2, //External
-                                   budgetYear : 1, //2015
-                                   budgetCycle: 3, //t3
-                                   jan: getItem(item.e_t3_jan_2015) ,
-                                   feb: getItem(item.e_t3_feb_2015) ,
-                                   mar: getItem(item.e_t3_mar_2015) ,
-                                   apr: getItem(item.e_t3_apr_2015) ,
-                                   may: getItem(item.e_t3_may_2015) ,
-                                   jun: getItem(item.e_t3_jun_2015) ,
-                                   jul: getItem(item.e_t3_jul_2015) ,
-                                   aug: getItem(item.e_t3_aug_2015) ,
-                                   sep: getItem(item.e_t3_sep_2015) ,
-                                   oct: getItem(item.e_t3_oct_2015) ,
-                                   nov: getItem(item.e_t3_nov_2015) ,
-                                   dec: getItem(item.e_t3_dec_2015)
-                ])
+                if ( type == "I") {
+                    resourceList.add([projectNo       : projectNo,
+                                      projectIndicator: projectIndicator,
+                                      projectNoText   : projectNoText,
+                                      program         : program,
+                                      resourceType    : 1, //Internal
+                                      budgetYear      : budgetYear, //2016
+                                      budgetCycle     : budgetCycle, //CURR
+                                      jan: getItem(item[key+ "-Jan"]),
+                                      feb: getItem(item[key+ "-Feb"]),
+                                      mar: getItem(item[key+ "-Mar"]),
+                                      apr: getItem(item[key+ "-Apr"]),
+                                      may: getItem(item[key+ "-May"]),
+                                      jun: getItem(item[key+ "-Jun"]),
+                                      jul: getItem(item[key+ "-Jul"]),
+                                      aug: getItem(item[key+ "-Aug"]),
+                                      sep: getItem(item[key+ "-Sep"]),
+                                      oct: getItem(item[key+ "-Oct"]),
+                                      nov: getItem(item[key+ "-Nov"]),
+                                      dec: getItem(item[key+ "-Dec"])
+                    ])
+                }else if (type=="E") {
+                    resourceList.add([projectNo       : projectNo,
+                                      projectIndicator: projectIndicator,
+                                      projectNoText   : projectNoText,
+                                      program         : program,
+                                      resourceType    : 2, //External
+                                      budgetYear      : budgetYear, //2016
+                                      budgetCycle     : budgetCycle, //CURR
+                                      jan: getItem(item[key+ "-Jan"]),
+                                      feb: getItem(item[key+ "-Feb"]),
+                                      mar: getItem(item[key+ "-Mar"]),
+                                      apr: getItem(item[key+ "-Apr"]),
+                                      may: getItem(item[key+ "-May"]),
+                                      jun: getItem(item[key+ "-Jun"]),
+                                      jul: getItem(item[key+ "-Jul"]),
+                                      aug: getItem(item[key+ "-Aug"]),
+                                      sep: getItem(item[key+ "-Sep"]),
+                                      oct: getItem(item[key+ "-Oct"]),
+                                      nov: getItem(item[key+ "-Nov"]),
+                                      dec: getItem(item[key+ "-Dec"])
+                    ])
 
-                //Roche_curr
-
-                resourceList.add( [projectNo: projectNo ,
-                                   projectIndicator: projectIndicator,
-                                   projectNoText: projectNoText,
-                                   program: program,
-                                   resourceType: 1, //Roche
-                                   budgetYear : 1, //2015
-                                   budgetCycle: 4, //CURR
-                                   jan: getItem(item.r_curr_jan_2015) ,
-                                   feb: getItem(item.r_curr_feb_2015) ,
-                                   mar: getItem(item.r_curr_mar_2015) ,
-                                   apr: getItem(item.r_curr_apr_2015) ,
-                                   may: getItem(item.r_curr_may_2015) ,
-                                   jun: getItem(item.r_curr_jun_2015) ,
-                                   jul: getItem(item.r_curr_jul_2015) ,
-                                   aug: getItem(item.r_curr_aug_2015) ,
-                                   sep: getItem(item.r_curr_sep_2015) ,
-                                   oct: getItem(item.r_curr_oct_2015) ,
-                                   nov: getItem(item.r_curr_nov_2015) ,
-                                   dec: getItem(item.r_curr_dec_2015)
-                ])
-                //External_curr
-                resourceList.add( [projectNo: projectNo ,
-                                   projectIndicator: projectIndicator,
-                                   projectNoText: projectNoText,
-                                   program: program,
-                                   resourceType: 2, //External
-                                   budgetYear : 1, //2015
-                                   budgetCycle: 4, //CURR
-                                   jan: getItem(item.e_curr_jan_2015) ,
-                                   feb: getItem(item.e_curr_feb_2015) ,
-                                   mar: getItem(item.e_curr_mar_2015) ,
-                                   apr: getItem(item.e_curr_apr_2015) ,
-                                   may: getItem(item.e_curr_may_2015) ,
-                                   jun: getItem(item.e_curr_jun_2015) ,
-                                   jul: getItem(item.e_curr_jul_2015) ,
-                                   aug: getItem(item.e_curr_aug_2015) ,
-                                   sep: getItem(item.e_curr_sep_2015) ,
-                                   oct: getItem(item.e_curr_oct_2015) ,
-                                   nov: getItem(item.e_curr_nov_2015) ,
-                                   dec: getItem(item.e_curr_dec_2015)
-                ])
-
-            }
+             }
     }
      return resourceList      
     }

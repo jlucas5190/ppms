@@ -248,7 +248,7 @@ class BudgetExtract extends  Extract{
                               expense: getItem(item.t3_2020_expense)
                               ])   
                         //t0_2015
-           budgetList.add( [projectNo: projectNo ,
+       /*    budgetList.add( [projectNo: projectNo ,
                             projectNoText: projectNoText,
                              budgetCycle:  1, //t0
                               budgetYear : 1, //2015
@@ -299,7 +299,7 @@ class BudgetExtract extends  Extract{
                              forecastYear: 7 , //2021  
                              capital: getItem(item.t0_2021_capital_2015) ,
                               expense: getItem(item.t0_2021_expense_2015)
-                              ]) 
+                              ])  */
                 }
     }
      return budgetList
