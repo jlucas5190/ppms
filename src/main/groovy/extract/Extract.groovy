@@ -19,8 +19,8 @@ abstract class Extract {
    abstract insertIntoTable(ArrayList items)
     def removeSpecialCharacters(String s){
         s = s.replace("[ ](?=[ ])|[^-_,A-Za-z0-9 ]+", "");
-       s = s.replace(" ", "")
-        s = s. replace(",", "")
+      // s = s.replace(" ", "")
+       // s = s. replace(",", "")
         s = s.replace("\$", "")       
         s = s.replace("(", "-")   
         s = s.replace(")", "")   
@@ -35,4 +35,14 @@ abstract class Extract {
     def getData(){
         return this.data
     }
+
+    def getItem(String s){
+        s = s.replace(" ", "")
+        s = s. replace(",", "")
+        s = s.replace("-\$","-")
+        s = s.replace("\$", "")
+        s = s.replace("k", "000")
+        return   s.isLong() ? s.toLong() : '0'
+    }
+
 }

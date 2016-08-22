@@ -84,15 +84,7 @@ class CashflowExtract extends  Extract{
              return this.cashflowData;
     }
     
-    def getItem(String s){
-         s = s.replace(" ", "")
-        s = s. replace(",", "")
-        s = s.replace("-\$","-")
-        s = s.replace("\$", "")     
-         s = s.replace("k", "000")        
-        return   s.isLong() ? s.toLong() : '0' 
-    }
- 
+
     def getProjectIndicator(String tmp){
         def results =sql.firstRow( "select ID FROM tblProjectIndicator where ProjectIndicator LIKE(${tmp})") ?: sql.firstRow( "select ID FROM tblProjectIndicator where ProjectIndicator LIKE('TBD')")
         return results.ID

@@ -22,9 +22,9 @@ class ProjectExtract extends  Extract{
          def projectList = []
                 for(item in data){
                     if(item.projectNo){
-            projectList.add( [projectNo: item.projectNo ,
+                       projectList.add( [projectNo: item.projectNo ,
                               projectTitle:item.projectTitle,
-                              businessCase: removeSpecialCharacters( item.businessCase),
+                              businessCase: removeSpecialCharacters(item.businessCase),
                                 CAPrefix: item.prefix,
                               businessDriver: getBuisnessDriver(item.businessDriver),
                               deprecCC: getDeprecCC(item.deprecCC),
@@ -34,7 +34,8 @@ class ProjectExtract extends  Extract{
                               category: getCategory(item.category),
                                 globalType: getGlobalType(item.globalType),
                                 SPPM: getSPPM(item.SPPM),
-                              SME: getSME(item.SME)
+                              SME: getSME(item.SME),
+                              approvedCA: getItem(item.approvedCA)
                             ])}
         }
      return projectList      
@@ -87,7 +88,7 @@ class ProjectExtract extends  Extract{
 
     def insertIntoTable(ArrayList items){
          items.each { item ->
-              def re = sql.executeInsert("INSERT into tblPortfolio (ProjectNo, ProjectTitle, BuisnessCase, CAPrefix, BuisnessDriver, Category, GlobalType, SPPM, SME, DeprecCC, Prefix, CRB, PD ) values ($item.projectNo , $item.projectTitle, $item.businessCase, $item.CAPrefix, $item.businessDriver, $item.category, $item.globalType, $item.SPPM, $item.SME, $item.deprecCC, $item.prefix, $item.CRB, $item.PD);")
+              def re = sql.executeInsert("INSERT into tblPortfolio (ProjectNo, ProjectTitle, BuisnessCase, CAPrefix, BuisnessDriver, Category, GlobalType, SPPM, SME, DeprecCC, Prefix, CRB, PD, ApprovedCA) values ($item.projectNo , $item.projectTitle, $item.businessCase, $item.CAPrefix, $item.businessDriver, $item.category, $item.globalType, $item.SPPM, $item.SME, $item.deprecCC, $item.prefix, $item.CRB, $item.PD, $item.approvedCA);")
                 }
          }
 

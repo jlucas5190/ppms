@@ -12,4 +12,23 @@ For 8/17: Joshua
 ^Resize field for Resource Report
 ^Add Project Name to Resource Report
 
-=getProjectBuisnessCase("74511")
+
+
+AprrovedCA on portfolio table
+
+qry Captial and Expense added to tblPortfolio 
+
+comment report/
+excel spread sheet from H -> J
+
+Bucket report
+
+•For 8/23: Joshua
+•Modify Portfolio (F, G, H, I, L, M, N, O, Q, R, S, T, U, V W, X, Y, Z , AA, AB, AC, AD)
+•Create Comment Report  (G,H, I, R, J)
+•Create Portfolio Budget (G, H, I, R, S,T,U,V, W, X, Y, AD, AF, AG, AH>>>>>)
+•Global Bucket report (Projects # 6DM & 90024)
+•Deidre
+•Deidre- Add Constraints for T3, MO5
+•Deidre – Where are variance in MPP?
+•Deidre – Expense Only Project

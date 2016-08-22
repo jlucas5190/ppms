@@ -18,6 +18,7 @@ class Main {
     static String password = ""
     static String driver = "net.ucanaccess.jdbc.UcanaccessDriver"
     static Random rand = new Random()
+   //static String projectFile = System.getProperty("user.dir") +"\\resources\\old-08-17-2016\\projects_BAK.csv"
     static String projectFile = System.getProperty("user.dir") +"\\resources\\projects.csv"
     static String resourcesFile = System.getProperty("user.dir") +"\\resources\\resources_2016.csv"
     static String budgetFile = System.getProperty("user.dir") +"\\resources\\budget.csv"
@@ -52,7 +53,7 @@ class Main {
           
        ProjectExtract project =  new ProjectExtract(projectFile, sql)
         def projectData = project.parseData()
-       project.insertIntoTable(projectData)
+        project.insertIntoTable(projectData)
         projectData.each {println it}/**/
 
        //ResourceExtract resource = new ResourceExtract(resourcesFile, sql)
